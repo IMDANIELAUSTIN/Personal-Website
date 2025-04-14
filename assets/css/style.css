@@ -375,8 +375,8 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
-  background: linear-gradient(to right, #834d9b, #d04ed6);
+  background: inherit;
+  background: inherit;
 }
 
 .wrapper a {
@@ -2530,8 +2530,8 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
-  background: linear-gradient(to right, #834d9b, #d04ed6);
+  background: inherit;
+  background: inherit;
 }
 
 .wrapper a {
