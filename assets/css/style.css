@@ -371,16 +371,15 @@ button:active {
 }
 
 .wrapper {
-  height: 100vh;
-  display: flex;
+max-width: 100%
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: inherit;
   background: inherit;
 }
 
 .wrapper a {
-  display: inline-block;
+  display: inline-flex;
   text-decoration: none;
   padding: 16px;
   background-color: #fff;
@@ -389,31 +388,23 @@ button:active {
   font-family: Roboto Mono, monospace;    
 }
 .responsive-iframe {
-display: inline-flex;
+display: block;
 aspect-ratio: 16 / 9;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-width: 100vh;
-  height: 100vh;
+  padding: 16px;
+  max-width: 100%;
 }
 .iframe-container {
 display: inline-flex;
+  padding: 16px;
 aspect-ratio: 16 / 9;
-  max-width: 100vh;
-  padding-bottom: 56.25%; /* 16:9 ratio (height ÷ width = 0.5625) */
-  height: 100vh;
+  max-width: 100%;
 }
 
 .iframe-container iframe {
 display: inline-flex;
 aspect-ratio: 16 / 9;
-  top: 0;
-  left: 0;
-  max-width: 100vh;
-  height: 100vh;
-  border: 2px solid rgba(0, 0, 0, 0);
+  max-width: 100%;
+  border: 2px solid rgba(#000000);
 }
 
 .youtube-video {
