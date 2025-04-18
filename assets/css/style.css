@@ -371,7 +371,7 @@ button:active {
 }
 
 .wrapper {
-max-width: 100%;
+   width: 100%;
   display: block;
   align-items: center;
   justify-content: center;
@@ -382,7 +382,7 @@ max-width: 100%;
   display: inline-flex;
   text-decoration: none;
   padding: 16px;
-  background-color: #fff;
+  background-color: inherit;
   text-transform: uppercase;
   color: #1e1e1e;
   font-family: Roboto Mono, monospace;    
@@ -392,7 +392,7 @@ display: block;
     position: relative ;
 aspect-ratio: 16 / 9;
   padding: 16px;
-  max-width: 100%;
+  width: 100%;
     overflow: hidden ;
 }
 .iframe-container {
@@ -400,15 +400,15 @@ display: block;
     position: relative ;
   padding: 16px;
 aspect-ratio: 16 / 9;
-  max-width: 1600px;
+  width: 100%;
     overflow: hidden ;
 }
 
 .iframe-container iframe {
     position: relative;
-display: inline-flex;
+display: block;
 aspect-ratio: 16 / 9;
-  max-width: 100%;
+  width: 100%;
     overflow: hidden ;
   border: 2px solid rgba(#000000);
 }
@@ -4318,7 +4318,7 @@ button:active {
         position: static;
         font-size: 10pt;
         padding: 8px;
-        max-width: 100vh;
+        max-width: 100%;
     margin: auto;
     
     }
@@ -4326,5 +4326,5 @@ button:active {
 .footer a {
                 position: static ;
                 margin: auto;
-                max-width: 100vh;
+                max-width: 100%;
             }
