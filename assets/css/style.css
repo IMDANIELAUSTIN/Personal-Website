@@ -371,8 +371,8 @@ button:active {
 }
 
 .wrapper {
-max-width: 100%
-  display: inline-flex;
+max-width: 100%;
+  display: block;
   align-items: center;
   justify-content: center;
   background: inherit;
@@ -396,7 +396,7 @@ aspect-ratio: 16 / 9;
     overflow: hidden ;
 }
 .iframe-container {
-display: inline-flex;
+display: block;
     position: relative ;
   padding: 16px;
 aspect-ratio: 16 / 9;
