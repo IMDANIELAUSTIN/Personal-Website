@@ -389,21 +389,27 @@ max-width: 100%
 }
 .responsive-iframe {
 display: block;
+    position: relative ;
 aspect-ratio: 16 / 9;
   padding: 16px;
   max-width: 100%;
+    overflow: hidden ;
 }
 .iframe-container {
 display: inline-flex;
+    position: relative ;
   padding: 16px;
 aspect-ratio: 16 / 9;
-  max-width: 100%;
+  max-width: 1600px;
+    overflow: hidden ;
 }
 
 .iframe-container iframe {
+    position: relative;
 display: inline-flex;
 aspect-ratio: 16 / 9;
   max-width: 100%;
+    overflow: hidden ;
   border: 2px solid rgba(#000000);
 }
 
