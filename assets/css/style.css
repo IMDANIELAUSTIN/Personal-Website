@@ -40,13 +40,14 @@ main {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center; /* Center text within the container */
-    text-wrap: wrap ;
-    margin: 0;
-
+display: block;
+flex-wrap: wrap;
+justify-content: center;
+text-align: left;
+text-wrap: wrap;
+margin: 16px;
+padding: 16px;
+max-width: 900px;
 }
 
 header {
@@ -269,7 +270,6 @@ nav button:active {
     border-radius: 16px;
     font-weight: bolder ;
         margin: 0;
-
 }
 
 button {
@@ -2223,12 +2223,14 @@ main {
 }
 
 .container {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center; /* Center text within the container */
-    text-wrap: wrap ;
-    margin: 0;
+    text-align: left;
+    text-wrap: wrap;
+    margin: 16px;
+    padding: 16px;
+    max-width: 100%;
 
 }
 
@@ -4083,12 +4085,13 @@ nav button:active {
 }
 
 .container {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center; /* Center text within the container */
+    text-align: left; /* Center text within the container */
     text-wrap: wrap ;
-    margin: 0;
+    margin: 8px;
+    padding: 8px;
     max-width: 100%;
 
 }
