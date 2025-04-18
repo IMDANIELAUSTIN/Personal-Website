@@ -65,7 +65,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     margin: 0;
 }
@@ -388,8 +388,8 @@ button:active {
   font-family: Roboto Mono, monospace;    
 }
 .responsive-iframe {
-display: block;
-    position: relative ;
+display: inline-flex;
+    position: unset ;
 aspect-ratio: 16 / 9;
   padding: 16px;
   width: 100%;
@@ -397,7 +397,7 @@ aspect-ratio: 16 / 9;
 }
 .iframe-container {
 display: block;
-    position: relative ;
+    position: relative;
   padding: 16px;
 aspect-ratio: 16 / 9;
   width: 100%;
@@ -406,7 +406,7 @@ aspect-ratio: 16 / 9;
 
 .iframe-container iframe {
     position: relative;
-display: block;
+display: inline-flex;
 aspect-ratio: 16 / 9;
   width: 100%;
     overflow: hidden ;
