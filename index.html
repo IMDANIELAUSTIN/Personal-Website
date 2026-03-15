@@ -28,6 +28,15 @@
     content="Daniel Austin, ASTNDSGN, and IMDANIELAUSTIN Is A Multi-Disciplinary Brand Designer, Product Conceptual Artist, Graphic Designer, and Product Designer Based In The Los Angeles, California Area With An Interest In FinTech/Financial Technology, Consumer Product, And Environmental Sustainability.">
   <meta name="twitter:description"
     content="Daniel Austin, ASTNDSGN, and IMDANIELAUSTIN Is A Multi-Disciplinary Brand Designer, Product Conceptual Artist, Graphic Designer, and Product Designer Based In The Los Angeles, California Area With An Interest In FinTech/Financial Technology, Consumer Product, And Environmental Sustainability.">
+<script>
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
 </head>
 
 <body>
