@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Address */}
         <div className="flex flex-col gap-1 text-sm">
           <span className="font-semibold text-foreground">Daniel Lee Austin</span>
-          <span className="text-muted-foreground">San Gabrial Valley</span>
+          <span className="text-muted-foreground">San Gabriel Valley</span>
           <span className="text-muted-foreground">Los Angeles, CA 91723</span>
           <span className="text-muted-foreground">626.838.2231</span>
         </div>
