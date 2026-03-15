@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "/src/assets/logo.svg";
+import logo from "./assets/logo.svg";
 
 const navItems = [
   { label: "Home", path: "/" },
