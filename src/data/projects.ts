@@ -1,12 +1,12 @@
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
-import project7 from "@/assets/project-7.jpg";
-import project8 from "@/assets/project-8.jpg";
-import project9 from "@/assets/project-9.jpg";
+import project1 from "/src/assets/project-1.jpg";
+import project2 from "/src/assets/project-2.jpg";
+import project3 from "/src/assets/project-3.jpg";
+import project4 from "/src/assets/project-4.jpg";
+import project5 from "/src/assets/project-5.jpg";
+import project6 from "/src/assets/project-6.jpg";
+import project7 from "/src/assets/project-7.jpg";
+import project8 from "/src/assets/project-8.jpg";
+import project9 from "/src/assets/project-9.jpg";
 
 export interface Project {
   slug: string;
