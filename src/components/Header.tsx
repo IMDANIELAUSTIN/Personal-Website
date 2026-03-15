@@ -5,7 +5,7 @@ import logo from "@/assets/logo.svg";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Work", path: "/" },
+  { label: "Work", path: "/work" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];
