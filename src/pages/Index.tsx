@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import ProjectGrid from "@/components/ProjectGrid";
-import Footer from "@/components/Footer";
+import Header from "/src/components/Header";
+import ProjectGrid from "/src/components/ProjectGrid";
+import Footer from "/src/components/Footer";
 
 const Index = () => {
   return (
