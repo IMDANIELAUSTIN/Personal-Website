@@ -4,7 +4,6 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/Personal-Website/',
   server: {
     host: "::",
     port: 8080,
@@ -13,7 +12,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "build",
+    outDir: "build", // ← kept from your first config
   },
   plugins: [
     react(),
@@ -21,7 +20,7 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), // ← fixed: was "/src", should be "./src"
     },
   },
 }));
