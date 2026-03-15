@@ -8,7 +8,7 @@ const Footer = () => {
         <nav className="flex flex-col gap-2">
           {[
             { label: "Home", path: "/" },
-            { label: "Work", path: "/" },
+            { label: "Work", path: "/work" },
             { label: "About", path: "/about" },
             { label: "Contact", path: "/contact" },
           ].map((item) => (
