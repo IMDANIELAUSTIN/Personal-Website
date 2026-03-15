@@ -15,10 +15,10 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "/index/tsconfig.app.json"
     },
     {
-      "path": "./tsconfig.node.json"
+      "path": "/index/tsconfig.node.json"
     }
   ]
 }
