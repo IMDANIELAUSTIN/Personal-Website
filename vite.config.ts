@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/Personal-Website/',
+  base: 'https://imdanielaustin.github.io/Personal-Website/',
   server: {
     host: "::",
     port: 8080,
