@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { projects } from "@/data/projects";
+import { projects } from "/src/data/projects";
 
-type SortMode = "curated" | "az" | "newest";
+type SortMode = "popular" | "az" | "newest";
 
 const INITIAL_COUNT = 6;
 
 const ProjectGrid = () => {
   const [showAll, setShowAll] = useState(false);
-  const [sortMode, setSortMode] = useState<SortMode>("curated");
+  const [sortMode, setSortMode] = useState<SortMode>("popular");
 
   const sortedProjects = [...projects].sort((a, b) => {
     if (sortMode === "az") return a.name.localeCompare(b.name);
     if (sortMode === "newest") return b.year - a.year;
-    return 0; // curated = original order
+    return 0; // popular = original order
   });
 
   const visibleProjects = showAll ? sortedProjects : sortedProjects.slice(0, INITIAL_COUNT);
@@ -28,7 +28,7 @@ const ProjectGrid = () => {
             <span className="text-muted-foreground">&gt;</span>
           </div>
           <div className="flex items-center gap-4 text-sm">
-            {(["curated", "az", "newest"] as SortMode[]).map((mode) => (
+            {(["popular", "az", "newest"] as SortMode[]).map((mode) => (
               <button
                 key={mode}
                 onClick={() => setSortMode(mode)}
@@ -38,7 +38,7 @@ const ProjectGrid = () => {
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {mode === "curated" ? "Curated" : mode === "az" ? "A–Z" : "Newest"}
+                {mode === "popular" ? "Popular" : mode === "az" ? "A–Z" : "Newest"}
               </button>
             ))}
           </div>
