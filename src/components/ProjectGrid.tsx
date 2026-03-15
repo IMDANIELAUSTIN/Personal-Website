@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { projects } from "/src/data/projects";
+import { projects } from "./data/projects";
 
 type SortMode = "popular" | "az" | "newest";
 
