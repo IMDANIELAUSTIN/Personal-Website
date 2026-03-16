@@ -1,0 +1,338 @@
+// ── Router ──────────────────────────────────────────────
+function getRoute() {
+  const path = location.hash.replace('#', '') || '/';
+  return path;
+}
+
+function navigate(path) {
+  location.hash = path;
+}
+
+window.addEventListener('hashchange', render);
+window.addEventListener('load', render);
+
+// ── Header ──────────────────────────────────────────────
+function renderHeader() {
+  const path = getRoute();
+  const navItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Work', path: '/work' },
+    { label: 'About', path: '/about' },
+    { label: 'Contact', path: '/contact' },
+  ];
+
+  return `
+    <header>
+      <a href="#/" class="logo">
+        <img src="assets/logo.svg" alt="Daniel Lee Austin" />
+      </a>
+      <nav class="desktop">
+        ${navItems.map(item => `
+          <a href="#${item.path}" class="${path === item.path ? 'active' : ''}">${item.label}</a>
+        `).join('')}
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" id="hamburger-btn">
+        <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </header>
+    <nav class="mobile" id="mobile-nav">
+      ${navItems.map(item => `
+        <a href="#${item.path}" class="${path === item.path ? 'active' : ''}" onclick="closeMenu()">${item.label}</a>
+      `).join('')}
+    </nav>
+  `;
+}
+
+function toggleMenu() {
+  const nav = document.getElementById('mobile-nav');
+  const iconMenu = document.getElementById('icon-menu');
+  const iconClose = document.getElementById('icon-close');
+  nav.classList.toggle('open');
+  iconMenu.classList.toggle('hidden');
+  iconClose.classList.toggle('hidden');
+}
+
+function closeMenu() {
+  const nav = document.getElementById('mobile-nav');
+  const iconMenu = document.getElementById('icon-menu');
+  const iconClose = document.getElementById('icon-close');
+  nav.classList.remove('open');
+  iconMenu.classList.remove('hidden');
+  iconClose.classList.add('hidden');
+}
+
+// ── Footer ──────────────────────────────────────────────
+function renderFooter() {
+  return `
+    <footer>
+      <div class="footer-grid">
+        <nav>
+          <a href="#/">Home</a>
+          <a href="#/work">Work</a>
+          <a href="#/about">About</a>
+          <a href="#/contact">Contact</a>
+        </nav>
+        <div>
+          <span class="bold">Daniel Lee Austin</span>
+          <span>San Gabriel Valley</span>
+          <span>Los Angeles, CA 91723</span>
+          <span>626.838.2231</span>
+        </div>
+        <div>
+          <span class="bold">Work Inquiries</span>
+          <a href="mailto:info@astndsgn.com">info@astndsgn.com</a>
+          <span style="margin-top:.75rem" class="bold">Press Inquiries</span>
+          <span>Daniel Lee Austin</span>
+          <span>626.838.2231</span>
+          <a href="mailto:press@astndsgn.com">press@astndsgn.com</a>
+        </div>
+        <nav>
+          <a href="#">Twitter</a>
+          <a href="#">Threads</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Substack</a>
+          <a href="#">Medium</a>
+        </nav>
+      </div>
+    </footer>
+  `;
+}
+
+// ── Project Grid ─────────────────────────────────────────
+let sortMode = 'popular';
+let showAll = false;
+const INITIAL_COUNT = 6;
+
+function getSorted() {
+  const list = [...projects];
+  if (sortMode === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
+  if (sortMode === 'newest') list.sort((a, b) => b.year - a.year);
+  return list;
+}
+
+function renderProjectGrid() {
+  const sorted = getSorted();
+  const visible = showAll ? sorted : sorted.slice(0, INITIAL_COUNT);
+
+  return `
+    <div class="filters">
+      <span class="label">Logos &gt;</span>
+      <div class="filter-btns">
+        <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">Popular</button>
+        <button class="filter-btn ${sortMode === 'az' ? 'active' : ''}" onclick="setSort('az')">A–Z</button>
+        <button class="filter-btn ${sortMode === 'newest' ? 'active' : ''}" onclick="setSort('newest')">Newest</button>
+      </div>
+    </div>
+    <div class="grid-section">
+      <div class="project-grid" id="project-grid">
+        ${visible.map(p => `
+          <a href="#/project/${p.slug}" class="project-card">
+            <div class="thumb">
+              <img src="${p.image}" alt="${p.name}" loading="lazy" />
+            </div>
+            <div class="info">
+              <strong>${p.name}</strong>
+              <span> - ${p.type}</span>
+            </div>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+    ${!showAll && projects.length > INITIAL_COUNT ? `
+      <div class="load-more">
+        <button onclick="loadMore()">View more logos</button>
+      </div>
+    ` : ''}
+  `;
+}
+
+function setSort(mode) {
+  sortMode = mode;
+  document.getElementById('project-grid-wrapper').innerHTML = renderProjectGrid();
+}
+
+function loadMore() {
+  showAll = true;
+  document.getElementById('project-grid-wrapper').innerHTML = renderProjectGrid();
+}
+
+// ── Pages ────────────────────────────────────────────────
+function pageIndex() {
+  sortMode = 'popular';
+  showAll = false;
+  return `
+    ${renderHeader()}
+    <section class="hero">
+      <h1>With a focus on growing enterprises across the globe, Daniel Lee Austin is an independent graphic designer specializing in the craft of commercial trademarks and visual identities.</h1>
+      <a href="#/work" class="cta">View selected work →</a>
+    </section>
+    <div id="project-grid-wrapper">${renderProjectGrid()}</div>
+    ${renderFooter()}
+  `;
+}
+
+function pageWork() {
+  sortMode = 'popular';
+  showAll = false;
+  return `
+    ${renderHeader()}
+    <section class="page-hero">
+      <h1>Selected Work</h1>
+    </section>
+    <div id="project-grid-wrapper">${renderProjectGrid()}</div>
+    ${renderFooter()}
+  `;
+}
+
+function pageAbout() {
+  return `
+    ${renderHeader()}
+    <section class="page-hero">
+      <p>To ensure the highest level of design, we keep our studio independent and focused, working collaboratively from our Los Angeles office for our clients around the world. At Daniel Lee Austin, every project is met with the creative vision and strategic thinking of all the firm's principals—as well as the diverse abilities, talents, and backgrounds of our entire team.</p>
+    </section>
+    <div class="studio-photos">
+      <img src="assets/studio-1.jpg" alt="Design studio workspace" />
+      <img src="assets/studio-2.jpg" alt="Team collaboration" />
+      <img src="assets/studio-3.jpg" alt="Design library" />
+    </div>
+    <div class="about-text">
+      <p>Daniel Lee Austin is the brand design firm behind many of the world's most recognizable trademarks. Since 1957, the firm has pioneered the modern movement of idea-driven graphic design across every discipline, specializing in brand identities, exhibitions, print and motion graphics, and art in architecture.</p>
+      <p>The firm has a global reach, with projects in Europe, Asia, Latin America, and the Middle East as well as throughout the United States. It is led by its founding partner and designer, with personal involvement by all principals in every project.</p>
+      <p>Daniel Lee Austin is known for a collaborative, problem solving approach to design, with continuous attention to the details and nuances of projects as they evolve.</p>
+    </div>
+    <div class="leadership">
+      <h2>Leadership</h2>
+      <div class="leaders-grid">
+        <div class="leader">
+          <img src="assets/leader-daniel.jpg" alt="Daniel Lee Austin" />
+          <p>Daniel Lee Austin</p>
+          <button>View bio</button>
+        </div>
+      </div>
+    </div>
+    ${renderFooter()}
+  `;
+}
+
+function pageContact() {
+  return `
+    ${renderHeader()}
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h1>Contact</h1>
+        <div class="contact-block">
+          <span class="bold">Work Inquiries</span>
+          <a href="mailto:info@astndsgn.com">info@astndsgn.com</a>
+          <span>626.838.2231</span>
+        </div>
+        <div class="contact-block">
+          <span class="bold">Press Inquiries</span>
+          <span>Daniel Lee Austin</span>
+          <span>626.838.2231</span>
+          <a href="mailto:press@astndsgn.com">press@astndsgn.com</a>
+        </div>
+        <div class="contact-block">
+          <span class="bold">Daniel Lee Austin</span>
+          <span>San Gabriel Valley</span>
+          <span>Los Angeles, CA 91723</span>
+        </div>
+        <div class="contact-block">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="contact-art">
+        <img src="assets/contact-art.jpg" alt="Colorful paper cut-out botanical artwork" />
+      </div>
+    </div>
+  `;
+}
+
+function pageProject(slug) {
+  const project = projects.find(p => p.slug === slug);
+  if (!project) return page404();
+
+  return `
+    ${renderHeader()}
+    <div class="project-detail">
+      <div class="breadcrumb">
+        <a href="#/">Logos</a> &gt;
+      </div>
+      <div class="project-title">
+        <h1>${project.name}</h1>
+      </div>
+      <div class="project-img">
+        <img src="${project.image}" alt="${project.name}" />
+      </div>
+      <div class="project-desc">
+        <p>${project.description[0]}</p>
+      </div>
+      <div class="project-img">
+        <img src="${project.image}" alt="${project.name} application" />
+      </div>
+      ${project.description[1] ? `
+        <div class="project-desc">
+          <p>${project.description[1]}</p>
+        </div>
+      ` : ''}
+      ${project.description[2] ? `
+        <div class="project-desc">
+          <p class="label">Enterprises</p>
+          <p>${project.description[2]}</p>
+        </div>
+      ` : ''}
+      <div class="project-meta">
+        <span>${project.type}</span>
+        <span>${project.year}</span>
+      </div>
+    </div>
+    ${renderFooter()}
+  `;
+}
+
+function page404() {
+  return `
+    <div class="not-found">
+      <div>
+        <h1>404</h1>
+        <p>Oops! Page not found</p>
+        <a href="#/">Return to Home</a>
+      </div>
+    </div>
+  `;
+}
+
+// ── Scroll to top ────────────────────────────────────────
+function initScrollTop() {
+  const btn = document.getElementById('scroll-top');
+  let lastY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > 300 && y > lastY) btn.classList.add('visible');
+    else if (y < lastY || y <= 100) btn.classList.remove('visible');
+    lastY = y;
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+// ── Render ───────────────────────────────────────────────
+function render() {
+  const path = getRoute();
+  const app = document.getElementById('app');
+  window.scrollTo(0, 0);
+
+  if (path === '/') app.innerHTML = pageIndex();
+  else if (path === '/work') app.innerHTML = pageWork();
+  else if (path === '/about') app.innerHTML = pageAbout();
+  else if (path === '/contact') app.innerHTML = pageContact();
+  else if (path.startsWith('/project/')) {
+    const slug = path.replace('/project/', '');
+    app.innerHTML = pageProject(slug);
+  }
+  else app.innerHTML = page404();
+}
+
+initScrollTop();
