@@ -24,11 +24,11 @@ const projects = [
     ]
   },
   {
-    slug: "nation-350",
+    slug: "snapchat",
     image: "assets/project-3.jpg",
-    name: "Nation 350",
+    name: "Snapchat Design Academy",
     type: "Logo, Identity System",
-    year: 2023,
+    year: 2021,
     description: [
       "Nation 350's identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
       "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
@@ -36,27 +36,27 @@ const projects = [
     ]
   },
   {
-    slug: "shield-entertainment",
+    slug: "artbound",
     image: "assets/project-4.jpg",
-    name: "Shield Entertainment",
+    name: "Artbound",
     type: "Logo, Identity System",
-    year: 2022,
+    year: 2021,
     description: [
-      "Shield Entertainment's rebrand aimed to position the company as a premium player in the entertainment industry. The shield motif in the logo communicates protection, trust, and prestige.",
-      "The identity system was designed to work seamlessly across screen and print, with careful attention to how the mark performs at various scales and in different contexts.",
-      "The new identity has been instrumental in Shield Entertainment's market positioning, lending credibility and visual sophistication to all brand touchpoints."
+      "Nation 350's identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
+      "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
+      "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms."
     ]
   },
   {
-    slug: "frame-geographic",
+    slug: "solefolks",
     image: "assets/project-5.jpg",
-    name: "Frame Geographic",
+    name: "Artbound",
     type: "Logo, Identity System",
-    year: 2022,
+    year: 2021,
     description: [
-      "Frame Geographic's identity captures the spirit of exploration and discovery. The logo's geometric precision reflects the organization's commitment to accuracy and clarity in geographic storytelling.",
-      "The design balances scientific rigor with visual appeal, creating a mark that is both authoritative and inviting. The supporting identity elements extend this balance across all applications.",
-      "The identity has helped Frame Geographic establish itself as a trusted source of geographic content and education."
+      "Nation 350's identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
+      "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
+      "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms."
     ]
   },
   {
