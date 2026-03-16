@@ -1,26 +1,26 @@
 const projects = [
   {
-    slug: "stellar-corp",
+    slug: "cd3",
     image: "assets/project-1.jpg",
-    name: "Stellar Corp",
-    type: "Logo, Identity Program",
-    year: 2024,
+    name: "Melanin, Metals, and Minerals",
+    type: "Print Design, Visual Design",
+    year: 2026,
     description: [
-      "Stellar Corp needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
+      "NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
       "In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.",
       "The identity has since become a cornerstone of Stellar Corp's visual presence, appearing across all touchpoints from digital platforms to physical signage and merchandise."
     ]
   },
   {
-    slug: "bloom-media",
+    slug: "ntwindow",
     image: "assets/project-2.jpg",
-    name: "Bloom Media",
-    type: "Logo, Identity Program",
-    year: 2023,
+    name: "NT Window Inc 35th Anniversary",
+    type: "Marketing, Visual Design",
+    year: 2025,
     description: [
-      "Bloom Media required an identity that captured the essence of growth and creativity. The organic forms in the logo reflect the company's dynamic approach to media production and storytelling.",
-      "The design process involved extensive exploration of natural motifs, ultimately arriving at a mark that feels both modern and timeless. The color system supports a wide range of applications while maintaining brand cohesion.",
-      "Since its launch, the Bloom Media identity has helped establish the company as a distinctive voice in the competitive media landscape."
+      "NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
+      "In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.",
+      "The identity has since become a cornerstone of Stellar Corp's visual presence, appearing across all touchpoints from digital platforms to physical signage and merchandise."
     ]
   },
   {
