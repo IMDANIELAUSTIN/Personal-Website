@@ -60,11 +60,11 @@ const projects = [
     ]
   },
   {
-    slug: "nature-channel",
+    slug: "akkurat",
     image: "assets/project-6.jpg",
-    name: "Nature Channel",
-    type: "Logo, Identity Program",
-    year: 2021,
+    name: "Akkurat Type Specimen",
+    type: "Typography, Print Design",
+    year: 2020,
     description: [
       "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife.",
       "The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark.",
@@ -72,11 +72,11 @@ const projects = [
     ]
   },
   {
-    slug: "circle-insurance",
+    slug: "narrative",
     image: "assets/project-7.jpg",
-    name: "Circle Insurance",
-    type: "Logo, Identity Program",
-    year: 2021,
+    name: "Spring 2020 Photo Look Book",
+    type: "Photography, Layout Design",
+    year: 2020,
     description: [
       "Circle Insurance's identity communicates wholeness, protection, and continuity. The circular form of the logo is a universal symbol of completeness, perfectly aligned with the company's promise of comprehensive coverage.",
       "The design is deliberately simple, ensuring recognition and recall across all media. The supporting identity system uses the circle motif as a flexible design element throughout brand communications.",
