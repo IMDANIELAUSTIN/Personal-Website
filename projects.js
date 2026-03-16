@@ -25,7 +25,7 @@ const projects = [
   },
   {
     slug: "snapchat",
-    image: "assets/project-2.jpg",
+    image: "assets/project-3.jpg",
     name: "Snapchat Design Academy",
     type: "Logo, Identity System",
     year: 2022,
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     slug: "artbound",
-    image: "assets/project-3.jpg",
+    image: "assets/project-4.jpg",
     name: "Artbound",
     type: "Logo, Identity System",
     year: 2021,
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     slug: "solefolks",
-    image: "assets/project-4.jpg",
+    image: "assets/project-5.jpg",
     name: "Solefolks Community Studio",
     type: "Logo, Identity System",
     year: 2021,
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     slug: "akkurat",
-    image: "assets/project-5.jpg",
+    image: "assets/project-6.jpg",
     name: "Akkurat Type Specimen",
     type: "Typography, Print Design",
     year: 2020,
@@ -73,7 +73,7 @@ const projects = [
   },
   {
     slug: "narrative",
-    image: "assets/project-6.jpg",
+    image: "assets/project-7.jpg",
     name: "Spring 2020 Photo Look Book",
     type: "Photography, Layout Design",
     year: 2020,
