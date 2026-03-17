@@ -190,7 +190,7 @@ function pageAbout() {
   return `
     ${renderHeader()}
     <section class="page-hero">
-      <p>To ensure the highest level of design, we keep our studio independent and focused, working collaboratively from our Los Angeles office for our clients around the world. At Daniel Lee Austin, every project is met with the creative vision and strategic thinking of all the firm's principals—as well as the diverse abilities, talents, and backgrounds of our entire team.</p>
+      <p>To deliver design at the highest level, I keep my practice independent and research focused while working from my Los Angeles studio for clients around the world. Every project receives my full creative vision and strategic thinking, ensuring a personal and intentional approach from start to finish.</p>
     </section>
     <div class="studio-photos">
       <img src="assets/studio-1.jpg" alt="Design studio workspace" />
@@ -198,12 +198,11 @@ function pageAbout() {
       <img src="assets/studio-3.jpg" alt="Design library" />
     </div>
     <div class="about-text">
-      <p>Daniel Lee Austin is the brand design firm behind many of the world's most recognizable trademarks. Since 1957, the firm has pioneered the modern movement of idea-driven graphic design across every discipline, specializing in brand identities, exhibitions, print and motion graphics, and art in architecture.</p>
-      <p>The firm has a global reach, with projects in Europe, Asia, Latin America, and the Middle East as well as throughout the United States. It is led by its founding partner and designer, with personal involvement by all principals in every project.</p>
-      <p>Daniel Lee Austin is known for a collaborative, problem solving approach to design, with continuous attention to the details and nuances of projects as they evolve.</p>
+      <p>Since 2016, I have built an independent design practice rooted in ideas and craft while specializing in brand identities and print design for clients across the United States and around the world.</p>
+      <p>My approach is collaborative and deeply personal. I am involved in every project from the first conversation to the final detail, bringing the same level of care and intention to work of every scale.</p>
     </div>
     <div class="leadership">
-      <h2>Team</h2>
+      <h2>Designer</h2>
       <div class="leaders-grid">
         <div class="leader">
           <img src="assets/leader-daniel.jpg" alt="Daniel Lee Austin" />
