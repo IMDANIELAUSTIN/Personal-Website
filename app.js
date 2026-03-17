@@ -88,12 +88,12 @@ function renderFooter() {
           <a href="mailto:press@astndsgn.com">press@astndsgn.com</a>
         </div>
         <nav>
-          <a href="#">Twitter</a>
-          <a href="#">Threads</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">Substack</a>
-          <a href="#">Medium</a>
+          <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
+          <a href="https://www.X.com/bydanielaustin">Twitter</a>
+          <a href="https://www.threads.com/IMDANIELAUSTIN">Threads</a>
+          <a href="https://www.instagram.com/ASTNDSGN">Instagram</a>
+          <a href="https://imdanielaustin.gumroad.com">Store</a>
+          <a href="https://www.imdanielaustin.com">Personal Blog</a> 
         </nav>
       </div>
     </footer>
@@ -103,7 +103,7 @@ function renderFooter() {
 // ── Project Grid ─────────────────────────────────────────
 let sortMode = 'popular';
 let showAll = false;
-const INITIAL_COUNT = 6;
+const INITIAL_COUNT = 3;
 
 function getSorted() {
   const list = [...projects];
@@ -118,7 +118,7 @@ function renderProjectGrid() {
 
   return `
     <div class="filters">
-      <span class="label">Logos &gt;</span>
+      <span class="label">Projects &gt;</span>
       <div class="filter-btns">
         <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">Popular</button>
         <button class="filter-btn ${sortMode === 'az' ? 'active' : ''}" onclick="setSort('az')">A–Z</button>
@@ -142,7 +142,7 @@ function renderProjectGrid() {
     </div>
     ${!showAll && projects.length > INITIAL_COUNT ? `
       <div class="load-more">
-        <button onclick="loadMore()">View more logos</button>
+        <button onclick="loadMore()">View More Projects</button>
       </div>
     ` : ''}
   `;
@@ -239,9 +239,12 @@ function pageContact() {
           <span>Los Angeles, CA 91723</span>
         </div>
         <div class="contact-block">
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
+          <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
+          <a href="https://www.X.com/bydanielaustin">Twitter</a>
+          <a href="https://www.threads.com/IMDANIELAUSTIN">Threads</a>
+          <a href="https://www.instagram.com/ASTNDSGN">Instagram</a>
+          <a href="https://imdanielaustin.gumroad.com">Store</a>
+          <a href="https://www.imdanielaustin.com">Personal Blog</a> 
         </div>
       </div>
       <div class="contact-art">
@@ -259,7 +262,7 @@ function pageProject(slug) {
     ${renderHeader()}
     <div class="project-detail">
       <div class="breadcrumb">
-        <a href="#/">Logos</a> &gt;
+        <a href="#/">Projects</a> &gt;
       </div>
       <div class="project-title">
         <h1>${project.name}</h1>

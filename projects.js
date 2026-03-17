@@ -1,16 +1,5 @@
 const projects = [
-  {
-    slug: "cd3",
-    image: "assets/project-1.jpg",
-    name: "Melanin, Metals, and Minerals",
-    type: "Print Design, Visual Design",
-    year: 2026,
-    description: [
-      "NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
-      "In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.",
-      "The identity has since become a cornerstone of Stellar Corp's visual presence, appearing across all touchpoints from digital platforms to physical signage and merchandise."
-    ]
-  },
+
   {
     slug: "ntwindow",
     image: "assets/project-2.jpg",
@@ -27,7 +16,7 @@ const projects = [
     slug: "snapchat",
     image: "assets/project-3.jpg",
     name: "Snapchat Design Academy",
-    type: "Logo, Identity System",
+    type: "Interface Design, Visual Design",
     year: 2022,
     description: [
       "Nation 350's identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
