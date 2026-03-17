@@ -118,9 +118,9 @@ function renderProjectGrid() {
 
   return `
     <div class="filters">
-      <span class="label">Projects &gt;</span>
+      <span class="label"></span>
       <div class="filter-btns">
-        <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">Popular</button>
+        <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">All</button>
         <button class="filter-btn ${sortMode === 'az' ? 'active' : ''}" onclick="setSort('az')">A–Z</button>
         <button class="filter-btn ${sortMode === 'newest' ? 'active' : ''}" onclick="setSort('newest')">Newest</button>
       </div>
@@ -179,7 +179,7 @@ function pageWork() {
   return `
     ${renderHeader()}
     <section class="page-hero">
-      <h1>Selected Work</h1>
+      <h1>My Work</h1>
     </section>
     <div id="project-grid-wrapper">${renderProjectGrid()}</div>
     ${renderFooter()}
@@ -203,12 +203,12 @@ function pageAbout() {
       <p>Daniel Lee Austin is known for a collaborative, problem solving approach to design, with continuous attention to the details and nuances of projects as they evolve.</p>
     </div>
     <div class="leadership">
-      <h2>Leadership</h2>
+      <h2>Team</h2>
       <div class="leaders-grid">
         <div class="leader">
           <img src="assets/leader-daniel.jpg" alt="Daniel Lee Austin" />
-          <p>Daniel Lee Austin</p>
-          <button>View bio</button>
+          <p>Daniel Austin</p>
+          <p>Los Angeles, California</p>
         </div>
       </div>
     </div>
