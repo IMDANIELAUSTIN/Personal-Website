@@ -17,7 +17,7 @@ const projects = [
     image: "assets/project-3.jpg",
     name: "Snapchat Design Academy",
     type: "Interface Design, Visual Design",
-    year: 2022,
+    year: 2021,
     description: [
       "Nation 350's identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
       "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
