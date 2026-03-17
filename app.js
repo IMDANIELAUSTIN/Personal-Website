@@ -196,6 +196,8 @@ function pageAbout() {
       <img src="assets/studio-1.jpg" alt="Design studio workspace" />
       <img src="assets/studio-2.jpg" alt="Team collaboration" />
       <img src="assets/studio-3.jpg" alt="Design library" />
+      <img src="assets/studio-4.jpg" alt="Design library" />
+
     </div>
     <div class="about-text">
       <p>Since 2016, I have built an independent design practice rooted in ideas and craft while specializing in brand identities and print design for clients across the United States and around the world.</p>
