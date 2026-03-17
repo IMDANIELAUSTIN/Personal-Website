@@ -1,16 +1,5 @@
 const projects = [
-  {
-    slug: "cd3",
-    image: "assets/project-1.jpg",
-    name: "Melanin, Metals, and Minerals",
-    type: "Print Design, Visual Design",
-    year: 2026,
-    description: [
-      "NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
-      "In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.",
-      "The identity has since become a cornerstone of Stellar Corp's visual presence, appearing across all touchpoints from digital platforms to physical signage and merchandise."
-    ]
-  },
+
   {
     slug: "ntwindow",
     image: "assets/project-2.jpg",
