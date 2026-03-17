@@ -84,25 +84,25 @@ const projects = [
     ]
   },
   {
-    slug: "apex-financial",
+    slug: "personalbrand",
     image: "assets/project-8.jpg",
-    name: "Apex Financial",
+    name: "ASTNDSGN Personal Branding",
     type: "Logo, Identity Program",
-    year: 2020,
+    year: 2018,
     description: [
-      "Apex Financial required an identity that projected authority, precision, and ambition. The angular mark suggests upward movement and peak performance, core values of the organization.",
+      "ASTNDSGN required an identity that projected authority, precision, and ambition. The angular mark suggests upward movement and peak performance, core values of the organization.",
       "The identity system pairs the bold logo with a refined typographic system and restrained color palette, creating a visual language that conveys both strength and sophistication.",
       "The new identity has supported Apex Financial's growth strategy, providing a professional and memorable brand presence across all client-facing materials."
     ]
   },
   {
-    slug: "green-initiative",
+    slug: "swatch",
     image: "assets/project-9.jpg",
-    name: "Green Initiative",
-    type: "Logo, Identity System",
+    name: "Prospect 100 x SWATCH",
+    type: "Logo, Visual Identity",
     year: 2020,
     description: [
-      "The Green Initiative identity was designed to inspire action and convey environmental responsibility. The mark combines natural imagery with bold graphic design, creating a symbol that is both hopeful and urgent.",
+      "The Swatch Company identity was designed to inspire action and convey environmental responsibility. The mark combines natural imagery with bold graphic design, creating a symbol that is both hopeful and urgent.",
       "The identity system uses a vibrant green palette alongside clean typography, supporting clear communication across campaigns, reports, and digital platforms.",
       "The identity has become a rallying point for the initiative's supporters, recognized as a symbol of positive environmental change."
     ]
