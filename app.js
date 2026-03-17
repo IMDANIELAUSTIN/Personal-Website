@@ -165,7 +165,7 @@ function pageIndex() {
   return `
     ${renderHeader()}
     <section class="hero">
-      <h1>With a focus on growing enterprises across the globe, Daniel Lee Austin is an independent graphic designer specializing in the craft of commercial trademarks and visual identities.</h1>
+      <h1>Independent graphic designer crafting brand identities and visual systems for enterprises worldwide.</h1>
       <a href="./Daniel Austin MASTER RÉSUMÉ.pdf" class="cta" download="Daniel Austin Graphic Design Resume">Download My Resume →</a>
     </section>
     <div id="project-grid-wrapper">${renderProjectGrid()}</div>
