@@ -140,12 +140,13 @@ nav.mobile a { font-size: 0.875rem; }
 .project-card .info span { color: var(--muted); }
 
 .load-more {
-  padding: 4rem 1.5rem;
-  text-align: center;
-  background: var(--muted-bg);
+    padding: 16px;
+    text-align: center;
+    background: var(--bg);
+
 }
 .load-more button {
-  font-size: 1.25rem;
+  font-size: 16pt;
   background: none;
   border: none;
   color: var(--fg);
