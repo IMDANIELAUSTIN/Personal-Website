@@ -106,12 +106,12 @@ let showAll = false;
 const INITIAL_COUNT = 6;
 
 function getSorted() {
-  const list = [...projects];
+  let list = [...projects];
   if (sortMode === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
   if (sortMode === 'newest') list.sort((a, b) => b.year - a.year);
-  if (sortMode === 'brand') list.sort((a, b) => b.type.localeCompare(a.type));
-  if (sortMode === 'print') list.sort((a, b) => b.type.localeCompare(a.type));
-  if (sortMode === 'visual') list.sort((a, b) => b.type.localeCompare(a.type));
+  if (sortMode === 'brand') list = list.filter(p => p.type.toLowerCase().includes('brand'));
+  if (sortMode === 'print') list = list.filter(p => p.type.toLowerCase().includes('print'));
+  if (sortMode === 'visual') list = list.filter(p => p.type.toLowerCase().includes('visual'));
   return list;
 }
 
