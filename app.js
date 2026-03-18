@@ -103,12 +103,13 @@ function renderFooter() {
 // ── Project Grid ─────────────────────────────────────────
 let sortMode = 'popular';
 let showAll = false;
-const INITIAL_COUNT = 3;
+const INITIAL_COUNT = 6;
 
 function getSorted() {
   const list = [...projects];
   if (sortMode === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
   if (sortMode === 'newest') list.sort((a, b) => b.year - a.year);
+  if (sortMode === 'branding') list.sort((a, b) => b.type.localeCompare(a.type));
   return list;
 }
 
@@ -123,6 +124,7 @@ function renderProjectGrid() {
         <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">All</button>
         <button class="filter-btn ${sortMode === 'az' ? 'active' : ''}" onclick="setSort('az')">A–Z</button>
         <button class="filter-btn ${sortMode === 'newest' ? 'active' : ''}" onclick="setSort('newest')">Newest</button>
+        <button class="filter-btn ${sortMode === 'branding' ? 'active' : ''}" onclick="setSort('branding')">Branding</button>
       </div>
     </div>
     <div class="grid-section">
