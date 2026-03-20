@@ -2,9 +2,9 @@ const projects = [
 
   {
     slug: "ntwindow",
-    image: "assets/project-2.jpg",
+    image: "assets/projecttile-2.jpg",
     name: "NT Window Inc Brand Anniversary Refresh",
-    type: "Brand Design, Visual Design",
+    type: "Visual Design",
     year: 2025,
     description: [
       "NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     slug: "snapchat",
-    image: "assets/project-3.jpg",
+    image: "assets/projecttile-3.jpg",
     name: "Snapchat Design Academy",
     type: "Interface Design, Visual Design",
     year: 2021,
@@ -26,8 +26,8 @@ const projects = [
   },
   {
     slug: "artbound",
-    image: "assets/project-4.jpg",
-    name: "PBS | Artbound",
+    image: "assets/projecttile-4.jpg",
+    name: "PBS | Artbound Logo Refresh",
     type: "Brand Design, Visual Design",
     year: 2021,
     description: [
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     slug: "solefolks",
-    image: "assets/project-5.jpg",
+    image: "assets/projecttile-5.jpg",
     name: "Solefolks Community Studio",
     type: "Brand Design, Visual Design",
     year: 2021,
@@ -50,7 +50,7 @@ const projects = [
   },
   {
     slug: "akkurat",
-    image: "assets/project-6.jpg",
+    image: "assets/projecttile-6.jpg",
     name: "Akkurat Type Specimen",
     type: "Typography, Print Design",
     year: 2020,
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     slug: "narrative",
-    image: "assets/project-7.jpg",
+    image: "assets/projecttile-7.jpg",
     name: "Spring 2020 Photo Look Book",
     type: "Photography, Print Design",
     year: 2020,
@@ -74,7 +74,7 @@ const projects = [
   },
   {
     slug: "personalbrand",
-    image: "assets/project-8.jpg",
+    image: "assets/projecttile-8.jpg",
     name: "ASTNDSGN Personal Branding",
     type: "Brand Design, Visual Design",
     year: 2018,
@@ -86,8 +86,8 @@ const projects = [
   },
   {
     slug: "swatch",
-    image: "assets/project-9.jpg",
-    name: "Prospect 100 x SWATCH",
+    image: "assets/projecttile-9.jpg",
+    name: "Prospect 100 x SWATCH Monogram Contest",
     type: "Brand Design, Visual Design",
     year: 2020,
     description: [
