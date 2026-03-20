@@ -3,7 +3,7 @@ const projects = [
   {
     slug: "ntwindow",
     image: "assets/project-2.jpg",
-    name: "NT Window Inc 35th Anniversary",
+    name: "NT Window Inc Brand Anniversary Refresh",
     type: "Brand Design, Visual Design",
     year: 2025,
     description: [
@@ -27,12 +27,12 @@ const projects = [
   {
     slug: "artbound",
     image: "assets/project-4.jpg",
-    name: "Artbound",
+    name: "PBS | Artbound",
     type: "Brand Design, Visual Design",
     year: 2021,
     description: [
-      "Artbound identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
-      "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
+      "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media.",
+      "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and both horizontal and vertical lockups.",
       "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms."
     ]
   },
