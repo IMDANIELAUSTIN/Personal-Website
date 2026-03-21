@@ -234,19 +234,19 @@ function pageContact() {
         <h1>Contact</h1>
         <div class="contact-block">
           <span class="bold">Work Inquiries</span>
-          <a href="mailto:info@astndsgn.com">info@astndsgn.com</a>
+          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
           <span>626.838.2231</span>
         </div>
         <div class="contact-block">
           <span class="bold">Press Inquiries</span>
           <span>Daniel Lee Austin</span>
           <span>626.838.2231</span>
-          <a href="mailto:press@astndsgn.com">press@astndsgn.com</a>
+          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
         </div>
         <div class="contact-block">
           <span class="bold">Daniel Lee Austin</span>
-          <span>San Gabriel Valley</span>
-          <span>Los Angeles, CA 91723</span>
+          <span>Independent Designer</span>
+          <span>Los Angeles, CA</span>
         </div>
         <div class="contact-block">
           <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
@@ -346,6 +346,32 @@ function render() {
     app.innerHTML = pageProject(slug);
   }
   else app.innerHTML = page404();
+
+  initScrollAnimations(); // ← add this line
+}
+// ── Scroll animations ────────────────────────────────────
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.classList.remove('hidden-below');
+      } else {
+        // Determine if scrolling up or down
+        if (entry.boundingClientRect.top > 0) {
+          // Element is below viewport — hide it again
+          entry.target.classList.remove('visible');
+          entry.target.classList.add('hidden-below');
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.project-card, .studio-photos img, .leader img, .contact-art img, .project-img img')
+    .forEach(el => {
+      el.classList.add('scroll-fade');
+      observer.observe(el);
+    });
 }
 
 initScrollTop();
