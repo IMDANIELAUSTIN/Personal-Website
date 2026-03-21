@@ -7,11 +7,11 @@ const projects = [
     type: "Visual Design",
     year: 2025,
     blocks: [
-      { type: 'image', url: 'assets/ntwindow1.jpg' },
+      { type: 'image', url: 'assets/ntwindow1.png' },
       { type: 'text', content: 'NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.' },
       { type: 'quote', text: '“NT Window has been a much loved brand around the world for more than 35 years and the time has never been more right to engage with mass audiences across every platform who are as passionate about our product as we are.”', author: 'Daniel Lee Austin, Designer', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
-      { type: 'image', url: 'assets/ntwindow2.jpg' },
+      { type: 'image', url: 'assets/ntwindow2.png' },
       { type: 'gif', url: 'https://media.giphy.com/media/l41lO5t3T2Y3R6hM4/giphy.gif', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'quote', text: '“NT Window required a mark to represent the global aspect of the brand... The new design is a truly global mark for NT Window.”', author: 'Daniel Austin, SVP of Marketing', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'The identity has since become a cornerstone of NT Window visually, appearing across all touchpoints from digital platforms to physical signage and merchandise.' }
@@ -32,7 +32,7 @@ const projects = [
       { type: 'image', url: 'assets/snap2.png' },
       { type: 'image', url: 'assets/snap3.png' },
       { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
-
+      { type: 'image', url: 'assets/snap4.png' },
     ]
   },
   {
@@ -48,6 +48,7 @@ const projects = [
       { type: 'text', content: "The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
       { type: 'quote', text: '“Insert quote from someone at PBS”', author: 'Daniel Lee Austin, Designer', bgColor: '#171A60', color: '#ECF6FB' },
       { type: 'image', url: 'assets/artbound2.png' },
+      { type: 'image', url: 'assets/artbound3.png' },
     ]
   },
   {
