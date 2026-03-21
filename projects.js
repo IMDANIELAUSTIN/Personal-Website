@@ -32,8 +32,8 @@ const projects = [
       { type: 'image', url: 'assets/snapbento.png' },
       { type: 'image', url: 'assets/snap2.png' },
       { type: 'image', url: 'assets/snap3.png' },
-      { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
       { type: 'image', url: 'assets/snap4.png' },
+      { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
     ]
   },
   {
