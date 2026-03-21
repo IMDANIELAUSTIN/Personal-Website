@@ -128,7 +128,6 @@ function renderProjectGrid() {
       <div class="filter-btns">
         <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">All</button>
         <button class="filter-btn ${sortMode === 'newest' ? 'active' : ''}" onclick="setSort('newest')">Newest</button>
-        <button class="filter-btn ${sortMode === 'az' ? 'active' : ''}" onclick="setSort('az')">A–Z</button>
         <button class="filter-btn ${sortMode === 'brand' ? 'active' : ''}" onclick="setSort('brand')">Brand Design</button>
         <button class="filter-btn ${sortMode === 'print' ? 'active' : ''}" onclick="setSort('print')">Print Design</button>
         <button class="filter-btn ${sortMode === 'visual' ? 'active' : ''}" onclick="setSort('visual')">Visual Design</button>
