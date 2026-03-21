@@ -266,15 +266,33 @@ function pageProject(slug) {
   const project = projects.find(p => p.slug === slug);
   if (!project) return page404();
 
-  return `
-    ${renderHeader()}
-    <div class="project-detail">
-      <div class="breadcrumb">
-        <a href="#/">Projects</a> &gt;
-      </div>
-      <div class="project-title">
-        <h1>${project.name}</h1>
-      </div>
+  let contentHtml = '';
+  
+  if (project.blocks) {
+    contentHtml = project.blocks.map(block => {
+      if (block.type === 'text') {
+        return `<div class="project-desc"><p>${block.content}</p></div>`;
+      }
+      if (block.type === 'image') {
+        return `<div class="project-img"><img src="${block.url}" alt="" /></div>`;
+      }
+      if (block.type === 'quote') {
+        const bgStyle = block.bgColor ? `background-color: ${block.bgColor};` : '';
+        const fgStyle = block.color ? `color: ${block.color};` : '';
+        return `
+          <div class="project-quote" style="${bgStyle} ${fgStyle}">
+            <blockquote>${block.text}</blockquote>
+            ${block.author ? `<cite>${block.author}</cite>` : ''}
+          </div>
+        `;
+      }
+      if (block.type === 'gif') {
+         return `<div class="project-img"><img src="${block.url}" alt="" class="replay-gif" data-src="${block.url}" /></div>`;
+      }
+      return '';
+    }).join('');
+  } else {
+    contentHtml = `
       <div class="project-img">
         <img src="${project.image}" alt="${project.name}" />
       </div>
@@ -295,6 +313,19 @@ function pageProject(slug) {
           <p>${project.description[2]}</p>
         </div>
       ` : ''}
+    `;
+  }
+
+  return `
+    ${renderHeader()}
+    <div class="project-detail">
+      <div class="breadcrumb">
+        <a href="#/">Projects</a> &gt;
+      </div>
+      <div class="project-title">
+        <h1>${project.name}</h1>
+      </div>
+      ${contentHtml}
       <div class="project-meta">
         <span>${project.type}</span>
         <span>${project.year}</span>
@@ -354,6 +385,16 @@ function initScrollAnimations() {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         entry.target.classList.remove('hidden-below');
+        
+        if (entry.target.classList.contains('replay-gif')) {
+          const src = entry.target.getAttribute('data-src');
+          if (src) {
+            entry.target.src = '';
+            // Force reflow
+            void entry.target.offsetWidth;
+            entry.target.src = src;
+          }
+        }
       } else {
         // Determine if scrolling up or down
         if (entry.boundingClientRect.top > 0) {
@@ -365,7 +406,7 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.project-card, .studio-photos img, .leader img, .contact-art img, .project-img img')
+  document.querySelectorAll('.project-card, .studio-photos img, .leader img, .contact-art img, .project-img img, .project-quote')
     .forEach(el => {
       el.classList.add('scroll-fade');
       observer.observe(el);

@@ -588,6 +588,38 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.project-quote {
+  padding: 4rem 1.5rem;
+  margin: 0 0 3rem 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .project-quote {
+    padding: 6rem 3rem;
+  }
+}
+
+.project-quote blockquote {
+  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 48rem;
+  margin: 0;
+}
+
+.project-quote cite {
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  opacity: 0.9;
+  max-width: 48rem;
+}
+
 .project-meta {
   padding: 2rem 1.5rem 4rem;
   border-top: 1px solid var(--border);
