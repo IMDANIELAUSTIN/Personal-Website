@@ -96,7 +96,7 @@ function renderFooter() {
           <a href="https://www.imdanielaustin.com">Personal Blog</a> 
         </nav>
         <div>
-          <span class="bold">© 2026 ASTNDSGN. All rights reserved.</span>
+          <span>Copyright © 2016-2026 DANIEL LEE AUSTIN. All rights reserved.</span>
         </div>
       </div>
     </footer>
