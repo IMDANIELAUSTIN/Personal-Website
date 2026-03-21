@@ -201,10 +201,9 @@ function pageAbout() {
       <p>To deliver design at the highest level, I keep my practice independent and research focused while working from my Los Angeles studio for clients around the world. Every project receives my full creative vision and strategic thinking, ensuring a personal and intentional approach from start to finish.</p>
     </section>
     <div class="studio-photos">
-      <img src="assets/studio-1.jpg" alt="Design studio workspace" />
-      <img src="assets/studio-2.jpg" alt="Team collaboration" />
-      <img src="assets/studio-3.jpg" alt="Design library" />
-      <img src="assets/studio-4.jpg" alt="Design library" />
+      <img src="assets/studio-1.jpg" alt="Group Photo at Snap Inc HQ in Santa Monica, CA" />
+      <img src="assets/studio-3.jpg" alt="Daniel Austin pictured at ArtCenter College of Design with faculty in Pasadena, CA" />
+      <img src="assets/studio-4.jpg" alt="Project Team Photo Collage" />
 
     </div>
     <div class="about-text">
