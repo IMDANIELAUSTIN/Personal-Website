@@ -11,7 +11,7 @@ const projects = [
       { type: 'quote', text: '“NT Window has been a much loved brand around the world for more than 35 years and the time has never been more right to engage with mass audiences across every platform who are as passionate about our product as we are.”', author: 'Daniel Lee Austin, Designer', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
       { type: 'image', url: 'assets/projecttile-2.jpg' },
-      { type: 'gif', url: 'https://media.giphy.com/media/l41lO5t3T2Y3R6hM4/giphy.gif' },
+      { type: 'gif', url: 'https://media.giphy.com/media/l41lO5t3T2Y3R6hM4/giphy.gif', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'quote', text: '“NT Window required a mark to represent the global aspect of the brand... The new design is a truly global mark for NT Window.”', author: 'Daniel Austin, SVP of Marketing', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'The identity has since become a cornerstone of NT Window visually, appearing across all touchpoints from digital platforms to physical signage and merchandise.' }
     ]
@@ -23,11 +23,12 @@ const projects = [
     type: "Interface Design, Visual Design",
     year: 2021,
     blocks: [
+      { type: 'image', url: 'assets/snap1.png' },
       { type: 'text', content: "Snapchat Design Academy identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
       { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
       { type: 'image', url: 'assets/snapbento.png' },
-      { type: 'quote', text: '“Insert quote from someone at Snapchat”', author: 'Daniel Lee Austin, Designer', bgColor: '#FFFC00', color: '#000000' },
+      { type: 'quote', text: '“A Snapchat feature designed to addressLos Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
 
     ]
   },
