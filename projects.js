@@ -39,11 +39,12 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
+      { type: 'image', url: 'assets/artbound1.png' },
       { type: 'text', content: "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world.", },
       { type: 'text', content: "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups.", },
       { type: 'text', content: "The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
       { type: 'quote', text: '“Insert quote from someone at PBS”', author: 'Daniel Lee Austin, Designer', bgColor: '#171A60', color: '#ECF6FB' },
-
+      { type: 'image', url: 'assets/artbound2.png' },
     ]
   },
   {
