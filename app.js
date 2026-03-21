@@ -95,6 +95,9 @@ function renderFooter() {
           <a href="https://imdanielaustin.gumroad.com">Store</a>
           <a href="https://www.imdanielaustin.com">Personal Blog</a> 
         </nav>
+        <div>
+          <span class="bold">© 2026 ASTNDSGN. All rights reserved.</span>
+        </div>
       </div>
     </footer>
   `;
