@@ -522,6 +522,8 @@ footer {
   padding: 1rem 1.5rem 0.5rem;
   font-size: 0.875rem;
   color: var(--muted);
+  max-width: 56rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -536,6 +538,8 @@ footer {
 
 .project-title {
   padding: 0 1.5rem 2rem;
+  max-width: 56rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -551,6 +555,8 @@ footer {
 
 .project-img {
   padding: 0 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -567,6 +573,7 @@ footer {
 .project-desc {
   padding: 0 1.5rem 2.5rem;
   max-width: 48rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -595,6 +602,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -609,6 +617,7 @@ footer {
   line-height: 1.4;
   max-width: 48rem;
   margin: 0;
+  width: 100%;
 }
 
 .project-quote cite {
@@ -618,6 +627,7 @@ footer {
   font-style: normal;
   opacity: 0.9;
   max-width: 48rem;
+  width: 100%;
 }
 
 .project-meta {
