@@ -31,9 +31,9 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2021,
     description: [
-      "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media.",
-      "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and both horizontal and vertical lockups.",
-      "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms."
+      "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world.",
+      "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups.",
+      "The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding."
     ]
   },
   {
