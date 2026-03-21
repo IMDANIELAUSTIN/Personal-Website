@@ -7,7 +7,7 @@ const projects = [
     type: "Visual Design",
     year: 2025,
     blocks: [
-      { type: 'image', url: 'assets/ntwindow1.png' },
+      { type: 'image', url: 'assets/ntwindow1.png', bgColor: '#6D2D3F' },
       { type: 'text', content: 'NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.' },
       { type: 'quote', text: '“NT Window has been a much loved brand around the world for more than 35 years and the time has never been more right to engage with mass audiences across every platform who are as passionate about our product as we are.”', author: 'Daniel Lee Austin, Designer', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
