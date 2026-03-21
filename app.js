@@ -75,17 +75,17 @@ function renderFooter() {
         </nav>
         <div>
           <span class="bold">Daniel Lee Austin</span>
-          <span>San Gabriel Valley</span>
-          <span>Los Angeles, CA 91723</span>
+          <span>Independent Designer</span>
+          <span>Los Angeles, CA</span>
           <span>626.838.2231</span>
         </div>
         <div>
           <span class="bold">Work Inquiries</span>
-          <a href="mailto:info@astndsgn.com">info@astndsgn.com</a>
+          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
           <span style="margin-top:.75rem" class="bold">Press Inquiries</span>
           <span>Daniel Lee Austin</span>
           <span>626.838.2231</span>
-          <a href="mailto:press@astndsgn.com">press@astndsgn.com</a>
+          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
         </div>
         <nav>
           <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
