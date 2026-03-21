@@ -27,7 +27,7 @@ const projects = [
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
       { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
       { type: 'image', url: 'assets/snapbento.png' },
-      { type: 'quote', text: '“Insert quote from someone at Snapchat”', author: 'Daniel Lee Austin, Designer', bgColor: '#FFFC00', color: '#ffffff' },
+      { type: 'quote', text: '“Insert quote from someone at Snapchat”', author: 'Daniel Lee Austin, Designer', bgColor: '#FFFC00', color: '#000000' },
 
     ]
   },
