@@ -274,6 +274,17 @@ function pageProject(slug) {
         return `<div class="project-desc"><p>${block.content}</p></div>`;
       }
       if (block.type === 'image') {
+        if (block.bgColor || block.color || block.caption) {
+          const bgStyle = block.bgColor ? `background-color: ${block.bgColor};` : '';
+          const fgStyle = block.color ? `color: ${block.color};` : '';
+          const captionHtml = block.caption ? `<div class="image-caption"><p>${block.caption}</p></div>` : '';
+          return `
+            <div class="project-feature-image" style="${bgStyle} ${fgStyle}">
+              <div class="project-img"><img src="${block.url}" alt="" /></div>
+              ${captionHtml}
+            </div>
+          `;
+        }
         return `<div class="project-img"><img src="${block.url}" alt="" /></div>`;
       }
       if (block.type === 'button') {
