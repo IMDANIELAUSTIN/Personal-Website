@@ -58,10 +58,15 @@ const projects = [
     name: "Solefolks Community Studio",
     type: "Brand Design, Visual Design",
     year: 2021,
-    description: [
-      "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language.",
-      "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression.",
-      "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms."
+    blocks: [
+      { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
+      { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
+      { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
+      { type: 'image', url: 'assets/solefolks1.png' },
+      { type: 'image', url: 'assets/solefolks2.png' },
+      { type: 'image', url: 'assets/solefolks3.png' },
+      { type: 'image', url: 'assets/solefolks4.png' },
+
     ]
   },
   {
@@ -70,10 +75,12 @@ const projects = [
     name: "Akkurat Type Specimen",
     type: "Typography, Print Design",
     year: 2020,
-    description: [
-      "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife.",
-      "The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark.",
-      "Since its introduction, the Nature Channel identity has become synonymous with quality natural history programming and environmental awareness."
+    blocks: [
+      { type: 'image', url: 'assets/akkurat1.png' },
+      { type: 'text', content: "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife." },
+      { type: 'text', content: "The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark." },
+      { type: 'text', content: "Since its introduction, the Nature Channel identity has become synonymous with quality natural history programming and environmental awareness." },
+
     ]
   },
   {
@@ -82,10 +89,12 @@ const projects = [
     name: "Spring 2020 Photo Look Book",
     type: "Photography, Print Design",
     year: 2020,
-    description: [
-      "This layout design project communicates wholeness, protection, and continuity. The circular form of the logo is a universal symbol of completeness, perfectly aligned with the company's promise of comprehensive coverage.",
-      "The design is deliberately simple, ensuring recognition and recall across all media. The supporting identity system uses the circle motif as a flexible design element throughout brand communications.",
-      "The rebrand has contributed to Circle Insurance's positioning as a modern, trustworthy provider in a competitive market."
+    blocks: [
+      { type: 'image', url: 'assets/narrative1.png' },
+      { type: 'text', content: "This layout design project communicates wholeness, protection, and continuity. The circular form of the logo is a universal symbol of completeness, perfectly aligned with the company's promise of comprehensive coverage." },
+      { type: 'text', content: "The design is deliberately simple, ensuring recognition and recall across all media. The supporting identity system uses the circle motif as a flexible design element throughout brand communications." },
+      { type: 'text', content: "The rebrand has contributed to Circle Insurance's positioning as a modern, trustworthy provider in a competitive market." },
+
     ]
   },
   {
@@ -94,10 +103,12 @@ const projects = [
     name: "ASTNDSGN Personal Branding",
     type: "Brand Design, Visual Design",
     year: 2018,
-    description: [
-      "ASTNDSGN required an identity that projected authority, precision, and ambition. The angular mark suggests upward movement and peak performance, core values of the organization.",
-      "The identity system pairs the bold logo with a refined typographic system and restrained color palette, creating a visual language that conveys both strength and sophistication.",
-      "The new identity has supported Apex Financial's growth strategy, providing a professional and memorable brand presence across all client-facing materials."
+    blocks: [
+      { type: 'image', url: 'assets/astndsgn1.png' },
+      { type: 'text', content: "ASTNDSGN required an identity that projected authority, precision, and ambition. The angular mark suggests upward movement and peak performance, core values of the organization." },
+      { type: 'text', content: "The identity system pairs the bold logo with a refined typographic system and restrained color palette, creating a visual language that conveys both strength and sophistication." },
+      { type: 'text', content: "The new identity has supported Apex Financial's growth strategy, providing a professional and memorable brand presence across all client-facing materials." },
+
     ]
   },
   {
@@ -106,10 +117,12 @@ const projects = [
     name: "Prospect 100 x SWATCH Monogram Contest",
     type: "Brand Design, Visual Design",
     year: 2020,
-    description: [
-      "The Swatch Company identity was designed to inspire action and convey environmental responsibility. The mark combines natural imagery with bold graphic design, creating a symbol that is both hopeful and urgent.",
-      "The identity system uses a vibrant green palette alongside clean typography, supporting clear communication across campaigns, reports, and digital platforms.",
-      "The identity has become a rallying point for the initiative's supporters, recognized as a symbol of positive environmental change."
+    blocks: [
+      { type: 'image', url: 'assets/swatch1.png' },
+      { type: 'text', content: "The Swatch Company identity was designed to inspire action and convey environmental responsibility. The mark combines natural imagery with bold graphic design, creating a symbol that is both hopeful and urgent." },
+      { type: 'text', content: "The identity system uses a vibrant green palette alongside clean typography, supporting clear communication across campaigns, reports, and digital platforms." },
+      { type: 'text', content: "The identity has become a rallying point for the initiative's supporters, recognized as a symbol of positive environmental change." },
+
     ]
   }
 ];
