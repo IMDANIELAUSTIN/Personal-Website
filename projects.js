@@ -13,7 +13,7 @@ const projects = [
       { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
       { type: 'image', url: 'assets/ntwindow2.png', bgColor: '#ffffff', },
       { type: 'image', url: 'assets/ntwindow3.png', bgColor: '#ffffff', },
-      { type: 'gif', url: 'https://media.giphy.com/media/l41lO5t3T2Y3R6hM4/giphy.gif', bgColor: '#ffffff', color: '#6D2D3F' },
+      { type: 'gif', url: 'assets/ntwindow4.gif', bgColor: '#ffffff', color: '#6D2D3F' },
       { type: 'quote', text: '“NT Window required a mark to represent the global aspect of the brand... The new design is a truly global mark for NT Window.”', author: 'Daniel Austin, SVP of Marketing', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'The identity has since become a cornerstone of NT Window visually, appearing across all touchpoints from digital platforms to physical signage and merchandise.' }
     ]
@@ -66,6 +66,8 @@ const projects = [
       { type: 'image', url: 'assets/solefolks2.png' },
       { type: 'image', url: 'assets/solefolks3.png' },
       { type: 'image', url: 'assets/solefolks4.png' },
+      { type: 'quote', text: 'Hybrid-collaboration is the new standard for the modern creative professional and the future of design.', author: 'Daniel Lee Austin, Designer', bgColor: '#c20000', color: '#ffffff' },
+      { type: 'image', url: 'assets/solefolks5.png' },
 
     ]
   },
