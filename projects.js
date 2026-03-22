@@ -58,6 +58,7 @@ const projects = [
     name: "Solefolks Community Studio",
     type: "Brand Design, Visual Design",
     year: 2021,
+    description: "In Spring 2021, I participated in Community Studio, a transdisciplinary course at ArtCenter College of Design structured as a real design consultancy. Working alongside students from multiple disciplines, I contributed to a comprehensive brand and design overhaul for Sole Folks, a Black-owned retail co-op in Leimert Park, Los Angeles. The project spanned brand identity, graphic design, and retail experience delivering professional-grade work directly to a real client and community.",
     blocks: [
       { type: 'image', url: 'assets/solefolks1.png' },
       { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
@@ -66,7 +67,7 @@ const projects = [
       { type: 'image', url: 'assets/solefolks2.png' },
       { type: 'image', url: 'assets/solefolks3.png' },
       { type: 'image', url: 'assets/solefolks4.png' },
-      { type: 'quote', text: 'Hybrid-collaboration is the new standard for the modern creative professional and the future of design.', author: 'Daniel Lee Austin, Designer', bgColor: '#c20000', color: '#ffffff' },
+      { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#c20000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
 
     ]
