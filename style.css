@@ -595,6 +595,39 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.project-button-wrapper {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+@media (min-width: 768px) {
+  .project-button-wrapper {
+    padding: 3rem;
+  }
+}
+
+.project-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--fg);
+  border-radius: 9999px;
+  background-color: var(--fg);
+  color: var(--bg);
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
 .project-quote {
   padding: 4rem 1.5rem;
   margin: 0 0 3rem 0;

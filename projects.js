@@ -58,8 +58,8 @@ const projects = [
     name: "Solefolks Community Studio",
     type: "Brand Design, Visual Design",
     year: 2021,
-    description: "In Spring 2021, I participated in Community Studio, a transdisciplinary course at ArtCenter College of Design structured as a real design consultancy. Working alongside students from multiple disciplines, I contributed to a comprehensive brand and design overhaul for Sole Folks, a Black-owned retail co-op in Leimert Park, Los Angeles. The project spanned brand identity, graphic design, and retail experience delivering professional-grade work directly to a real client and community.",
     blocks: [
+      { type: 'text', content: "In Spring 2021, I participated in Community Studio, a transdisciplinary course at ArtCenter College of Design structured as a real design consultancy. Working alongside students from multiple disciplines, I contributed to a comprehensive brand and design overhaul for Sole Folks, a Black-owned retail co-op in Leimert Park, Los Angeles. The project spanned brand identity, graphic design, and retail experience delivering professional-grade work directly to a real client and community." },
       { type: 'image', url: 'assets/solefolks1.png' },
       { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
@@ -69,8 +69,9 @@ const projects = [
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#c20000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
-
+      { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/news/2021-05-18/community-studio-partners-with-leimert-parks-sole-folks', bgColor: '#c20000', color: '#ffffff' }
     ]
+
   },
   {
     slug: "akkurat",

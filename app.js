@@ -276,6 +276,17 @@ function pageProject(slug) {
       if (block.type === 'image') {
         return `<div class="project-img"><img src="${block.url}" alt="" /></div>`;
       }
+      if (block.type === 'button') {
+        const bgStyle = block.bgColor ? `background-color: ${block.bgColor};` : '';
+        const fgStyle = block.color ? `color: ${block.color}; border-color: ${block.color};` : '';
+        return `
+          <div class="project-button-wrapper">
+            <a href="${block.url}" target="_blank" rel="noopener noreferrer" class="project-button" style="${bgStyle} ${fgStyle}">
+              ${block.text}
+            </a>
+          </div>
+        `;
+      }
       if (block.type === 'quote') {
         const bgStyle = block.bgColor ? `background-color: ${block.bgColor};` : '';
         const fgStyle = block.color ? `color: ${block.color};` : '';
