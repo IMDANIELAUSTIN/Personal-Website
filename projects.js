@@ -69,7 +69,7 @@ const projects = [
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#c20000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
-      { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/news/2021-05-18/community-studio-partners-with-leimert-parks-sole-folks', bgColor: '#c20000', color: '#ffffff' }
+      { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/academics/undergraduate-degrees/product-design/course-of-study/featured-courses/community-studio.html', bgColor: '#c20000', color: '#ffffff' }
     ]
 
   },
