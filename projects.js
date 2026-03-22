@@ -59,10 +59,10 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
+      { type: 'image', url: 'assets/solefolks1.png' },
       { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
       { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
-      { type: 'image', url: 'assets/solefolks1.png' },
       { type: 'image', url: 'assets/solefolks2.png' },
       { type: 'image', url: 'assets/solefolks3.png' },
       { type: 'image', url: 'assets/solefolks4.png' },
