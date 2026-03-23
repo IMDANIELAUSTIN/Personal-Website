@@ -166,8 +166,17 @@ function loadMore() {
   document.getElementById('project-grid-wrapper').innerHTML = renderProjectGrid();
 }
 
+function updateMeta(title, description) {
+  document.title = title ? `${title} | DANIEL LEE AUSTIN` : 'DANIEL LEE AUSTIN';
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && description) {
+    metaDesc.setAttribute('content', description);
+  }
+}
+
 // ── Pages ────────────────────────────────────────────────
 function pageIndex() {
+  updateMeta('Home', 'Daniel Austin is a Multi-Disciplinary Brand Designer and Product Conceptual Artist.');
   sortMode = 'popular';
   showAll = false;
   return `
@@ -182,6 +191,7 @@ function pageIndex() {
 }
 
 function pageWork() {
+  updateMeta('Work', 'Explore the portfolio of Daniel Lee Austin.');
   sortMode = 'popular';
   showAll = false;
   return `
@@ -195,6 +205,7 @@ function pageWork() {
 }
 
 function pageAbout() {
+  updateMeta('About', 'Learn about Daniel Lee Austin, Independent Designer based in Los Angeles.');
   return `
     ${renderHeader()}
     <section class="page-hero">
@@ -225,6 +236,7 @@ function pageAbout() {
 }
 
 function pageContact() {
+  updateMeta('Contact', 'Get in touch with Daniel Lee Austin for work or press inquiries.');
   return `
     ${renderHeader()}
     <div class="contact-grid">
@@ -266,6 +278,9 @@ function pageProject(slug) {
   const project = projects.find(p => p.slug === slug);
   if (!project) return page404();
 
+  const metaDesc = typeof project.description === 'string' ? project.description.substring(0, 150) + '...' : project.name;
+  updateMeta(project.name, metaDesc);
+
   let contentHtml = '';
   
   if (project.blocks) {
@@ -280,12 +295,12 @@ function pageProject(slug) {
           const captionHtml = block.caption ? `<div class="image-caption"><p>${block.caption}</p></div>` : '';
           return `
             <div class="project-feature-image" style="${bgStyle} ${fgStyle}">
-              <div class="project-img"><img src="${block.url}" alt="" /></div>
+              <div class="project-img"><img src="${block.url}" alt="" loading="lazy" decoding="async" /></div>
               ${captionHtml}
             </div>
           `;
         }
-        return `<div class="project-img"><img src="${block.url}" alt="" /></div>`;
+        return `<div class="project-img"><img src="${block.url}" alt="" loading="lazy" decoding="async" /></div>`;
       }
       if (block.type === 'embed') {
         return `
@@ -323,13 +338,13 @@ function pageProject(slug) {
   } else {
     contentHtml = `
       <div class="project-img">
-        <img src="${project.image}" alt="${project.name}" />
+        <img src="${project.image}" alt="${project.name}" loading="lazy" decoding="async" />
       </div>
       <div class="project-desc">
         <p>${project.description[0]}</p>
       </div>
       <div class="project-img">
-        <img src="${project.image}" alt="${project.name} application" />
+        <img src="${project.image}" alt="${project.name} application" loading="lazy" decoding="async" />
       </div>
       ${project.description[1] ? `
         <div class="project-desc">
