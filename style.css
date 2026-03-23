@@ -87,8 +87,8 @@ nav.desktop {
 }
 
 nav a {
-  font-size: 0.875rem;
-  color: var(--muted);
+  font-size: 0.67rem;
+  color: #000000;
   transition: color 0.2s;
 }
 
@@ -285,7 +285,6 @@ nav.mobile a {
 /* ── Footer ── */
 footer {
   background: var(--bg);
-  border-top: 1px solid var(--border);
   padding: 3rem 1.5rem 4rem;
 }
 
@@ -317,8 +316,8 @@ footer {
 
 .footer-grid a,
 .footer-grid span {
-  font-size: 0.875rem;
-  color: var(--muted);
+  font-size: 0.67rem;
+  color: #000000;
   transition: color 0.2s;
 }
 
