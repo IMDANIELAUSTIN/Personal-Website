@@ -84,9 +84,12 @@ const projects = [
     year: 2020,
     blocks: [
       { type: 'image', url: 'assets/akkurat1.png' },
-      { type: 'text', content: "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife." },
-      { type: 'text', content: "The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark." },
-      { type: 'text', content: "Since its introduction, the Nature Channel identity has become synonymous with quality natural history programming and environmental awareness." },
+      { type: 'text', content: "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife. The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark. Since its introduction, the Nature Channel identity has become synonymous with quality natural history programming and environmental awareness." },
+      { type: 'image', url: 'assets/akkurat2.png' },
+      { type: 'image', url: 'assets/akkurat3.png' },
+      { type: 'image', url: 'assets/akkurat4.png' },
+      { type: 'image', url: 'assets/akkurat5.png' },
+      { type: 'image', url: 'assets/akkurat mograph.webm' },
 
     ]
   },
