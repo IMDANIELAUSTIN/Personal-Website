@@ -89,7 +89,7 @@ const projects = [
       { type: 'image', url: 'assets/akkurat3.png' },
       { type: 'image', url: 'assets/akkurat4.png' },
       { type: 'image', url: 'assets/akkurat5.png' },
-      { type: 'image', url: 'assets/akkurat mograph.webm' },
+      { type: 'gif', url: 'assets/akkurat mograph.webm' },
 
     ]
   },
