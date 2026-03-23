@@ -34,7 +34,6 @@ const projects = [
       { type: 'image', url: 'assets/snap2.png', bgColor: '#ffffff', },
       { type: 'image', url: 'assets/snap3.png', bgColor: '#FFFC00', },
       { type: 'image', url: 'assets/snap4.png', bgColor: '#ffffff', },
-      { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
       { type: 'image', url: 'assets/snapteam.png' },
       { type: 'image', url: 'assets/snap5.png' },
       { type: 'image', url: 'assets/snap6.png' },
@@ -80,7 +79,7 @@ const projects = [
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#dc0000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
-      { type: 'image', url: 'assets/solefolks6.png', bgColor: '#dc0000', },
+      { type: 'image', url: 'assets/solefolks6.png', bgColor: '#ffffff', },
       { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/academics/undergraduate-degrees/product-design/course-of-study/featured-courses/community-studio.html', bgColor: '#dc0000', color: '#ffffff' }
     ]
 
