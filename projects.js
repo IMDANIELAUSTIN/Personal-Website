@@ -7,14 +7,13 @@ const projects = [
     type: "Visual Design",
     year: 2025,
     blocks: [
+      { type: 'text', content: "NT Window Inc. is a leading manufacturer of windows and doors, serving both residential and commercial markets. In 2025, I was commissioned to refresh the NT Window brand guidelines to prepare for the company's 35th anniversary while extending the celebration to automotive and employee apparel." },
       { type: 'image', url: 'assets/ntwindow1.png', bgColor: '#6D2D3F', },
       { type: 'text', content: 'NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.' },
-      { type: 'quote', text: '“NT Window has been a much loved brand around the world for more than 35 years and the time has never been more right to engage with mass audiences across every platform who are as passionate about our product as we are.”', author: 'Daniel Lee Austin, Designer', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
       { type: 'image', url: 'assets/ntwindow2.png' },
       { type: 'image', url: 'assets/ntwindow3.png' },
       { type: 'image', url: 'assets/ntwindow4.png' },
-      { type: 'quote', text: '“NT Window required a mark to represent the global aspect of the brand... The new design is a truly global mark for NT Window.”', author: 'Daniel Austin, SVP of Marketing', bgColor: '#6D2D3F', color: '#ffffff' },
       { type: 'text', content: 'The identity has since become a cornerstone of NT Window visually, appearing across all touchpoints from digital platforms to physical signage and merchandise.' }
     ]
   },
@@ -25,6 +24,7 @@ const projects = [
     type: "Interface Design, Visual Design",
     year: 2021,
     blocks: [
+      { type: 'text', content: "Selected as a Snap Design Academy Scholar, I joined a cohort of emerging designers for an immersive, industry-level program hosted by Snap Inc and LA-Tech. Working cross-functionally with designers, engineers, and storytellers, I helped concept and develop the UI/UX for a new Snap feature designed to elevate underrepresented Los Angeles Neighborhoods, gaining hands-on experience in design research, direct mentorship, and critical guidance from Snap's creative team." },
       { type: 'image', url: 'assets/snap1.png' },
       { type: 'text', content: "Snapchat Design Academy identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
@@ -43,6 +43,7 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
+      { type: 'text', content: "Artbound is a PBS (Public Broadcasting Service) initiative that celebrates the diverse artistic and cultural landscape of Los Angeles. The program serves as a platform for artists and creatives to share their stories and perspectives with a broad audience. In 2021, I was commissioned to refresh the Artbound identity system, creating a mark that would reflect the program's commitment to diversity, creativity, and community." },
       { type: 'image', url: 'assets/artbound1.png' },
       { type: 'text', content: "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world.", },
       { type: 'text', content: "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups.", },
