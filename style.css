@@ -613,13 +613,13 @@ footer {
 
 .project-desc p {
   font-size: 0.875rem;
-  line-height: 1.8;
-  color: var(--muted);
+  line-height: 1.4;
+  color: #000000;
 }
 
 .project-desc .label {
-  font-size: 0.75rem;
-  color: var(--muted);
+  font-size: 0.67rem;
+  color: #000000;
   font-style: italic;
   margin-bottom: 0.5rem;
 }
