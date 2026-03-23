@@ -25,9 +25,9 @@ const projects = [
     year: 2021,
     blocks: [
       { type: 'text', content: "Selected as a Snap Design Academy Scholar, I joined a cohort of emerging designers for an immersive, industry-level program hosted by Snap Inc and LA-Tech. Working cross-functionally with designers, engineers, and storytellers, I helped concept and develop the UI/UX for a new Snap feature designed to elevate underrepresented Los Angeles Neighborhoods, gaining hands-on experience in design research, direct mentorship, and critical guidance from Snap's creative team." },
-      { type: 'image', url: 'assets/snap1.png' },
+      { type: 'image', url: 'assets/snap1.png', bgColor: '#fffc00', },
       { type: 'text', content: "Snapchat Design Academy identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language. The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression. The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
-      { type: 'image', url: 'assets/snapbento.png' },
+      { type: 'image', url: 'assets/snapbento.png', bgColor: '#ffffff', },
       { type: 'embed', html: '<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/dsGMxnMAXQs?si=VVsThF7PuiOv9b4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>' },
       { type: 'image', url: 'assets/snap2.png', bgColor: '#ffffff', },
       { type: 'image', url: 'assets/snap3.png', bgColor: '#FFFC00', },
