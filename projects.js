@@ -112,32 +112,4 @@ const projects = [
 
     ]
   },
-  {
-    slug: "personalbrand",
-    image: "assets/projecttile-8.jpg",
-    name: "ASTNDSGN Personal Branding",
-    type: "Brand Design, Visual Design",
-    year: 2018,
-    blocks: [
-      { type: 'image', url: 'assets/astndsgn1.png' },
-      { type: 'text', content: "ASTNDSGN required an identity that projected authority, precision, and ambition. The angular mark suggests upward movement and peak performance, core values of the organization." },
-      { type: 'text', content: "The identity system pairs the bold logo with a refined typographic system and restrained color palette, creating a visual language that conveys both strength and sophistication." },
-      { type: 'text', content: "The new identity has supported Apex Financial's growth strategy, providing a professional and memorable brand presence across all client-facing materials." },
-
-    ]
-  },
-  {
-    slug: "swatch",
-    image: "assets/projecttile-9.jpg",
-    name: "Prospect 100 x SWATCH Monogram Contest",
-    type: "Brand Design, Visual Design",
-    year: 2020,
-    blocks: [
-      { type: 'image', url: 'assets/swatch1.png' },
-      { type: 'text', content: "The Swatch Company identity was designed to inspire action and convey environmental responsibility. The mark combines natural imagery with bold graphic design, creating a symbol that is both hopeful and urgent." },
-      { type: 'text', content: "The identity system uses a vibrant green palette alongside clean typography, supporting clear communication across campaigns, reports, and digital platforms." },
-      { type: 'text', content: "The identity has become a rallying point for the initiative's supporters, recognized as a symbol of positive environmental change." },
-
-    ]
-  }
 ];
