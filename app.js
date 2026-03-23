@@ -287,6 +287,13 @@ function pageProject(slug) {
         }
         return `<div class="project-img"><img src="${block.url}" alt="" /></div>`;
       }
+      if (block.type === 'embed') {
+        return `
+          <div class="project-embed-wrapper">
+            ${block.html}
+          </div>
+        `;
+      }
       if (block.type === 'button') {
         const bgStyle = block.bgColor ? `background-color: ${block.bgColor};` : '';
         const fgStyle = block.color ? `color: ${block.color}; border-color: ${block.color};` : '';

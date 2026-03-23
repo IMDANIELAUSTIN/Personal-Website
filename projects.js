@@ -30,9 +30,9 @@ const projects = [
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
       { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
       { type: 'image', url: 'assets/snapbento.png' },
-      { type: 'image', url: 'assets/snap2.png' },
-      { type: 'image', url: 'assets/snap3.png' },
-      { type: 'image', url: 'assets/snap4.png', bgColor: '#FFFC00', },
+      { type: 'image', url: 'assets/snap2.png', bgColor: '#ffffff', },
+      { type: 'image', url: 'assets/snap3.png', bgColor: '#FFFC00', },
+      { type: 'image', url: 'assets/snap4.png', bgColor: '#ffffff', },
       { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
       { type: 'image', url: 'assets/snapteam.png' },
       { type: 'image', url: 'assets/snap5.png' },
@@ -41,7 +41,8 @@ const projects = [
       { type: 'image', url: 'assets/snap8.png' },
       { type: 'image', url: 'assets/snap9.png' },
       { type: 'image', url: 'assets/snapsponsor.png', bgColor: '#ffffff', },
-
+      { type: 'button', text: 'View Project Presentation Here', url: '', bgColor: '#dc0000', color: '#ffffff' },
+      { type: 'embed', html: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/684013951?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Snap Academies 2021"></iframe></div>' }
     ]
   },
   {
@@ -78,6 +79,7 @@ const projects = [
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#dc0000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
+      { type: 'image', url: 'assets/solefolks6.png', bgColor: '#dc0000', },
       { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/academics/undergraduate-degrees/product-design/course-of-study/featured-courses/community-studio.html', bgColor: '#dc0000', color: '#ffffff' }
     ]
 
