@@ -552,14 +552,14 @@ footer {
 }
 
 .project-img {
-  padding: 0;
+  padding: 0 1.5rem 2rem;
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: 768px) {
   .project-img {
-    padding: 0;
+    padding: 0 3rem 2rem;
   }
 }
 
