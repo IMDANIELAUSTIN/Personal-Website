@@ -9,8 +9,7 @@ const projects = [
     blocks: [
       { type: 'text', content: "NT Window Inc. is a leading manufacturer of windows and doors, serving both residential and commercial markets. In 2025, I was commissioned to refresh the NT Window brand guidelines to prepare for the company's 35th anniversary while extending the celebration to automotive and employee apparel." },
       { type: 'image', url: 'assets/ntwindow1.png', bgColor: '#6D2D3F', },
-      { type: 'text', content: 'NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol.' },
-      { type: 'text', content: 'In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
+      { type: 'text', content: 'NT Window needed a brand identity that communicated innovation and reliability. The resulting mark uses bold geometric forms to convey strength and forward momentum, creating an immediately recognizable symbol. In order to make the identity both functional and memorable, the design was streamlined to its essential elements. The color palette and typography were carefully selected to ensure versatility across digital and print applications.' },
       { type: 'image', url: 'assets/ntwindow2.png' },
       { type: 'image', url: 'assets/ntwindow3.png' },
       { type: 'image', url: 'assets/ntwindow4.png' },
