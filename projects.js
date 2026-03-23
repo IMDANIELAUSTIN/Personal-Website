@@ -32,7 +32,7 @@ const projects = [
       { type: 'image', url: 'assets/snap2.png', bgColor: '#ffffff', },
       { type: 'image', url: 'assets/snap3.png', bgColor: '#FFFC00', },
       { type: 'image', url: 'assets/snap4.png', bgColor: '#ffffff', },
-      { type: 'image', url: 'assets/snapteam.png' },
+      { type: 'image', url: 'assets/snapteam.png', bgColor: '#ffffff', },
       { type: 'image', url: 'assets/snap5.png' },
       { type: 'image', url: 'assets/snap6.png' },
       { type: 'image', url: 'assets/snap7.png' },
