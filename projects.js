@@ -72,10 +72,9 @@ const projects = [
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#dc0000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks5.png' },
-      { type: 'image', url: 'assets/solefolks6.png', bgColor: '#ffffff', },
+      { type: 'image', url: 'assets/solefolks6.png' },
       { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/academics/undergraduate-degrees/product-design/course-of-study/featured-courses/community-studio.html', bgColor: '#dc0000', color: '#ffffff' }
     ]
-
   },
   {
     slug: "akkurat",
