@@ -51,9 +51,7 @@ const projects = [
     blocks: [
       { type: 'text', content: "Artbound is a PBS (Public Broadcasting Service) initiative that celebrates the diverse artistic and cultural landscape of Los Angeles. The program serves as a platform for artists and creatives to share their stories and perspectives with a broad audience. In 2021, I was commissioned to refresh the Artbound identity system, creating a mark that would reflect the program's commitment to diversity, creativity, and community." },
       { type: 'image', url: 'assets/artbound1.png' },
-      { type: 'text', content: "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world.", },
-      { type: 'text', content: "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups.", },
-      { type: 'text', content: "The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
+      { type: 'text', content: "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world. This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups. The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
       { type: 'quote', text: '“Insert quote from someone at PBS”', author: 'Daniel Lee Austin, Designer', bgColor: '#171A60', color: '#ECF6FB' },
       { type: 'image', url: 'assets/artbound2.png', bgColor: '#ECF6FB', },
       { type: 'image', url: 'assets/artbound3.png', bgColor: '#ECF6FB', },
@@ -68,9 +66,7 @@ const projects = [
     blocks: [
       { type: 'text', content: "In Spring 2021, I participated in Community Studio, a transdisciplinary course at ArtCenter College of Design structured as a real design consultancy. Working alongside students from multiple disciplines, I contributed to a comprehensive brand and design overhaul for Sole Folks, a Black-owned retail co-op in Leimert Park, Los Angeles. The project spanned brand identity, graphic design, and retail experience delivering professional-grade work directly to a real client and community." },
       { type: 'image', url: 'assets/solefolks1.png', caption: 'Photo by Jason Armond, featured on Los Angeles Times' },
-      { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
-      { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
-      { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
+      { type: 'text', content: "Sole Folks identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language. The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression. The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
       { type: 'image', url: 'assets/solefolks2.png' },
       { type: 'image', url: 'assets/solefolks3.png' },
       { type: 'image', url: 'assets/solefolks4.png' },
