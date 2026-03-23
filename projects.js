@@ -55,7 +55,7 @@ const projects = [
   {
     slug: "solefolks",
     image: "assets/projecttile-5.jpg",
-    name: "Solefolks Community Studio",
+    name: "ArtCenter x Sole Folks Community Studio",
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
