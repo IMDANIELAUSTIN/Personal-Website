@@ -25,14 +25,14 @@ const projects = [
     year: 2021,
     blocks: [
       { type: 'text', content: "Selected as a Snap Design Academy Scholar, I joined a cohort of emerging designers for an immersive, industry-level program hosted by Snap Inc and LA-Tech. Working cross-functionally with designers, engineers, and storytellers, I helped concept and develop the UI/UX for a new Snap feature designed to elevate underrepresented Los Angeles Neighborhoods, gaining hands-on experience in design research, direct mentorship, and critical guidance from Snap's creative team." },
-      { type: 'image', url: 'assets/snap1.png' },
+      { type: 'image', url: 'assets/snap1.png', bgColor: '#FFFC00', },
       { type: 'text', content: "Snapchat Design Academy identity system was developed to represent unity and collective purpose. The mark draws on symbolic elements that resonate across cultures, creating a universal visual language." },
       { type: 'text', content: "The identity system extends beyond the logo to encompass a comprehensive toolkit of patterns, icons, and typography that allow for flexible yet consistent brand expression." },
       { type: 'text', content: "The resulting system has proven highly adaptable, serving the organization's diverse communication needs across events, publications, and digital platforms." },
       { type: 'image', url: 'assets/snapbento.png' },
       { type: 'image', url: 'assets/snap2.png' },
       { type: 'image', url: 'assets/snap3.png' },
-      { type: 'image', url: 'assets/snap4.png' },
+      { type: 'image', url: 'assets/snap4.png', bgColor: '#FFFC00', },
       { type: 'quote', text: '“A Snapchat feature designed to address Los Angeles’ access to Environmental Sustainability”', bgColor: '#FFFC00', color: '#000000' },
       { type: 'image', url: 'assets/snapteam.png' },
       { type: 'image', url: 'assets/snap5.png' },
@@ -40,7 +40,7 @@ const projects = [
       { type: 'image', url: 'assets/snap7.png' },
       { type: 'image', url: 'assets/snap8.png' },
       { type: 'image', url: 'assets/snap9.png' },
-      { type: 'image', url: 'assets/snapsponsor.png' },
+      { type: 'image', url: 'assets/snapsponsor.png', bgColor: '#ffffff', },
 
     ]
   },
@@ -57,8 +57,8 @@ const projects = [
       { type: 'text', content: "This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups.", },
       { type: 'text', content: "The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
       { type: 'quote', text: '“Insert quote from someone at PBS”', author: 'Daniel Lee Austin, Designer', bgColor: '#171A60', color: '#ECF6FB' },
-      { type: 'image', url: 'assets/artbound2.png' },
-      { type: 'image', url: 'assets/artbound3.png' },
+      { type: 'image', url: 'assets/artbound2.png', bgColor: '#ECF6FB', },
+      { type: 'image', url: 'assets/artbound3.png', bgColor: '#ECF6FB', },
     ]
   },
   {
