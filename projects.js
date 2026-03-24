@@ -94,18 +94,5 @@ const projects = [
 
     ]
   },
-  {
-    slug: "narrative",
-    image: "assets/projecttile-7.jpg",
-    name: "Spring 2020 Photo Look Book",
-    type: "Photography, Print Design",
-    year: 2020,
-    blocks: [
-      { type: 'image', url: 'assets/narrative1.png' },
-      { type: 'text', content: "This layout design project communicates wholeness, protection, and continuity. The circular form of the logo is a universal symbol of completeness, perfectly aligned with the company's promise of comprehensive coverage." },
-      { type: 'text', content: "The design is deliberately simple, ensuring recognition and recall across all media. The supporting identity system uses the circle motif as a flexible design element throughout brand communications." },
-      { type: 'text', content: "The rebrand has contributed to Circle Insurance's positioning as a modern, trustworthy provider in a competitive market." },
 
-    ]
-  },
 ];
