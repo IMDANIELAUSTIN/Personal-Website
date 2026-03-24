@@ -45,11 +45,11 @@ const projects = [
   {
     slug: "artbound",
     image: "assets/projecttile-4.jpg",
-    name: "PBS | Artbound Logo Refresh",
+    name: "Artbound — Logo Redesign & Cultural Identity System",
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
-      { type: 'text', content: "Artbound is a PBS (Public Broadcasting Service) initiative that celebrates the diverse artistic and cultural landscape of Los Angeles. The program serves as a platform for artists and creatives to share their stories and perspectives with a broad audience. In 2021, I was commissioned to refresh the Artbound identity system, creating a mark that would reflect the program's commitment to diversity, creativity, and community." },
+      { type: 'text', content: "A strategic rebrand for Artbound, an Emmy® award-winning arts and culture series documenting creative innovation across Southern California. This project repositions the identity to better reflect its role as both a cultural archive and contemporary media platform, balancing editorial credibility with visual impact." },
       { type: 'image', url: 'assets/artbound1.png' },
       { type: 'text', content: "The PBS (Public Broadcasting Service) and Artbound mark was developed to represent congruence between different mediums of art and media in an ever-connected world. This system encompasses a scalable logomark and typemark that can be used across a variety of applications and with both a horizontal and vertical lockups. The result proves to be an adaptable solution while serving for the sub-brand's communication needs across events and digital platforms while maintaining an ability to attach to PBS branding." },
       { type: 'quote', text: '“Insert quote from someone at PBS”', author: 'Daniel Lee Austin, Designer', bgColor: '#171A60', color: '#ECF6FB' },
