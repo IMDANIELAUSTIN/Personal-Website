@@ -16,7 +16,7 @@ const projects = [
       { type: 'image', url: 'assets/ntwindow5.png' },
       { type: 'image', url: 'assets/ntwindow6.png' },
       { type: 'image', url: 'assets/ntwindow7.png' },
-      { type: 'text', content: 'The identity has since become a cornerstone of NT Window visually, appearing across all touchpoints from digital platforms to physical signage and merchandise.' }
+      { type: 'text', content: 'The developments has since become a cornerstone of NT Window visually, appearing across various touchpoints from social media and wayfinding to faculty event apparel.' }
     ]
   },
   {
