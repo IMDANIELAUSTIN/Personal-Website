@@ -66,7 +66,7 @@ function closeMenu() {
 function renderFooter() {
   const sections = [
     {
-      title: 'Navigate',
+      title: 'DANIEL LEE AUSTIN STUDIO',
       items: [
         { label: 'Home', href: '#/' },
         { label: 'Work', href: '#/work' },
@@ -74,33 +74,9 @@ function renderFooter() {
         { label: 'Contact', href: '#/contact' },
       ],
     },
+
     {
-      title: 'Studio',
-      items: [
-        { label: 'Daniel Lee Austin', emphasis: true },
-        { label: 'Independent Designer' },
-        { label: 'Los Angeles, CA' },
-        { label: '626.838.2231', href: 'tel:6268382231' },
-      ],
-    },
-    {
-      title: 'Work Inquiries',
-      items: [
-        { label: 'daustin@inside.artcenter.edu', href: 'mailto:daustin@inside.artcenter.edu' },
-        { label: '626.838.2231', href: 'tel:6268382231' },
-        { label: 'Worldwide collaborations' },
-      ],
-    },
-    {
-      title: 'Press Inquiries',
-      items: [
-        { label: 'Daniel Lee Austin', emphasis: true },
-        { label: '626.838.2231', href: 'tel:6268382231' },
-        { label: 'daustin@inside.artcenter.edu', href: 'mailto:daustin@inside.artcenter.edu' },
-      ],
-    },
-    {
-      title: 'Elsewhere',
+      title: 'Social Media',
       items: [
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN', external: true },
         { label: 'Twitter', href: 'https://www.X.com/bydanielaustin', external: true },
@@ -115,7 +91,7 @@ function renderFooter() {
   const legalLinks = [
     { label: 'Privacy Policy', href: 'privacy-policy.html' },
     { label: 'Terms of Service', href: 'terms-of-service.html' },
-    { label: 'Contact', href: '#/contact' },
+    { label: 'Sitemap', href: '#/sitemap.xml' },
   ];
 
   const renderItem = (item) => {
