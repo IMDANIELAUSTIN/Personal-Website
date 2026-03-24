@@ -86,14 +86,12 @@ const projects = [
     year: 2020,
     blocks: [
       { type: 'image', url: 'assets/akkurat1.png' },
-      { type: 'text', content: "Using Akkurat to develop a typographic system juxtaposed with the works of Alfred Hitchcock, I explor Akkurat's role as a contemporary neo-grotesque in editorial design. The booklet examines how neutrality can be leveraged as a design tool—using structure, scale, and rhythm to create clarity without sacrificing visual identity., exploring its role as a contemporary neo-grotesque in editorial design. This booklet examines how neutrality can be leveraged as a design tool—using structure, scale, and rhythm to create clarity without sacrificing visual identity." },
+      { type: 'text', content: "Using Akkurat to develop a typographic system juxtaposed with the works of Alfred Hitchcock, this booklet explores Akkurat's role as a contemporary neo-grotesque within an editorial design. The booklet showcases how neutrality can be leveraged as a design tool without sacrificing visual identity." },
       { type: 'image', url: 'assets/akkurat2.png' },
       { type: 'text', content: "Objective: Design an 8-page editorial booklet that communicates the unique characteristics, history, and functional versatility of the typeface Akkurat." },
       { type: 'image', url: 'assets/akkurat3.png' },
       { type: 'image', url: 'assets/akkurat4.png' },
       { type: 'image', url: 'assets/akkurat5.png' },
-      { type: 'video', url: 'assets/akkurat mograph.webm' },
-
     ]
   },
 
