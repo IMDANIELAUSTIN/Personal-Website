@@ -512,20 +512,20 @@ footer {
 
 /* Project Detail */
 .project-detail {
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
 }
 
 .breadcrumb {
-  padding: 1rem 1.5rem 0.5rem;
+  padding: 4rem;
   font-size: 0.875rem;
-  color: var(--muted);
+  color: inherit;
   max-width: 56rem;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .breadcrumb {
-    padding: 1rem 3rem 0.5rem;
+    padding: 4rem;
   }
 }
 
@@ -702,8 +702,7 @@ footer {
 }
 
 .project-meta {
-  padding: 2rem 1.5rem 4rem;
-  border-top: 1px solid var(--border);
+  padding: 4rem;
   font-size: 0.875rem;
   color: var(--muted);
   display: flex;
@@ -713,7 +712,7 @@ footer {
 
 @media (min-width: 768px) {
   .project-meta {
-    padding: 2rem 3rem 4rem;
+    padding: 4rem;
   }
 }
 
