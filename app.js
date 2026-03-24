@@ -64,39 +64,104 @@ function closeMenu() {
 
 // ── Footer ──────────────────────────────────────────────
 function renderFooter() {
+  const sections = [
+    {
+      title: 'Navigate',
+      items: [
+        { label: 'Home', href: '#/' },
+        { label: 'Work', href: '#/work' },
+        { label: 'About', href: '#/about' },
+        { label: 'Contact', href: '#/contact' },
+      ],
+    },
+    {
+      title: 'Studio',
+      items: [
+        { label: 'Daniel Lee Austin', emphasis: true },
+        { label: 'Independent Designer' },
+        { label: 'Los Angeles, CA' },
+        { label: '626.838.2231', href: 'tel:6268382231' },
+      ],
+    },
+    {
+      title: 'Work Inquiries',
+      items: [
+        { label: 'daustin@inside.artcenter.edu', href: 'mailto:daustin@inside.artcenter.edu' },
+        { label: '626.838.2231', href: 'tel:6268382231' },
+        { label: 'Worldwide collaborations' },
+      ],
+    },
+    {
+      title: 'Press Inquiries',
+      items: [
+        { label: 'Daniel Lee Austin', emphasis: true },
+        { label: '626.838.2231', href: 'tel:6268382231' },
+        { label: 'daustin@inside.artcenter.edu', href: 'mailto:daustin@inside.artcenter.edu' },
+      ],
+    },
+    {
+      title: 'Elsewhere',
+      items: [
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN', external: true },
+        { label: 'Twitter', href: 'https://www.X.com/bydanielaustin', external: true },
+        { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN', external: true },
+        { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN', external: true },
+        { label: 'Store', href: 'https://imdanielaustin.gumroad.com', external: true },
+        { label: 'Personal Blog', href: 'https://www.imdanielaustin.com', external: true },
+      ],
+    },
+  ];
+
+  const legalLinks = [
+    { label: 'Privacy Policy', href: 'privacy-policy.html' },
+    { label: 'Terms of Service', href: 'terms-of-service.html' },
+    { label: 'Contact', href: '#/contact' },
+  ];
+
+  const renderItem = (item) => {
+    const classes = `footer-item${item.emphasis ? ' footer-item-strong' : ''}`;
+    if (item.href) {
+      const externalAttrs = item.external ? ' target="_blank" rel="noreferrer"' : '';
+      return `<a class="${classes}" href="${item.href}"${externalAttrs}>${item.label}</a>`;
+    }
+
+    return `<span class="${classes}">${item.label}</span>`;
+  };
+
   return `
-    <footer>
-      <div class="footer-grid">
-        <nav>
-          <a href="#/">Home</a>
-          <a href="#/work">Work</a>
-          <a href="#/about">About</a>
-          <a href="#/contact">Contact</a>
-        </nav>
-        <div>
-          <span class="bold">Daniel Lee Austin</span>
-          <span>Independent Designer</span>
-          <span>Los Angeles, CA</span>
-          <span>626.838.2231</span>
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <div class="footer-accordion">
+          ${sections.map(section => `
+            <details class="footer-section">
+              <summary>
+                <span>${section.title}</span>
+                <svg class="footer-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="footer-section-body">
+                ${section.items.map(renderItem).join('')}
+              </div>
+            </details>
+          `).join('')}
         </div>
-        <div>
-          <span class="bold">Work Inquiries</span>
-          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
-          <span style="margin-top:.75rem" class="bold">Press Inquiries</span>
-          <span>Daniel Lee Austin</span>
-          <span>626.838.2231</span>
-          <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
-        </div>
-        <nav>
-          <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
-          <a href="https://www.X.com/bydanielaustin">Twitter</a>
-          <a href="https://www.threads.com/IMDANIELAUSTIN">Threads</a>
-          <a href="https://www.instagram.com/ASTNDSGN">Instagram</a>
-          <a href="https://imdanielaustin.gumroad.com">Store</a>
-          <a href="https://www.imdanielaustin.com">Personal Blog</a> 
-        </nav>
-        <div>
-          <span>Copyright © 2016-2026 DANIEL LEE AUSTIN. All rights reserved.</span>
+        <div class="footer-meta">
+          <p class="footer-note">
+            Available for brand identity, print design, and visual systems. Email
+            <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>
+            or call
+            <a href="tel:6268382231">626.838.2231</a>.
+          </p>
+          <div class="footer-legal">
+            <span>Copyright © 2016-2026 Daniel Lee Austin. All rights reserved.</span>
+            <div class="footer-legal-links">
+              ${legalLinks.map((item, index) => `
+                ${index ? '<span class="footer-divider" aria-hidden="true">|</span>' : ''}
+                <a href="${item.href}">${item.label}</a>
+              `).join('')}
+            </div>
+          </div>
         </div>
       </div>
     </footer>
