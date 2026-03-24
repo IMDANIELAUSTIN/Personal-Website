@@ -79,13 +79,14 @@ const projects = [
   {
     slug: "akkurat",
     image: "assets/projecttile-6.jpg",
-    name: "Akkurat Type Specimen",
+    name: "Type Specimen Booklet",
     type: "Typography, Print Design",
     year: 2020,
     blocks: [
       { type: 'image', url: 'assets/akkurat1.png' },
-      { type: 'text', content: "The Nature Channel identity was created to embody the beauty and diversity of the natural world. The mark uses fluid, organic forms that evoke natural landscapes and wildlife. The color palette draws directly from nature, with earth tones and vibrant accents that reflect the channel's programming content. The typography is clean and modern, providing contrast to the organic logo mark. Since its introduction, the Nature Channel identity has become synonymous with quality natural history programming and environmental awareness." },
+      { type: 'text', content: "Using Akkurat to develop a typographic system juxtaposed with the works of Alfred Hitchcock, I explor Akkurat's role as a contemporary neo-grotesque in editorial design. The booklet examines how neutrality can be leveraged as a design tool—using structure, scale, and rhythm to create clarity without sacrificing visual identity., exploring its role as a contemporary neo-grotesque in editorial design. This booklet examines how neutrality can be leveraged as a design tool—using structure, scale, and rhythm to create clarity without sacrificing visual identity." },
       { type: 'image', url: 'assets/akkurat2.png' },
+      { type: 'text', content: "Objective: Design an 8-page editorial booklet that communicates the unique characteristics, history, and functional versatility using the typeface Akkurat while maintaining a cohesive visual system." },
       { type: 'image', url: 'assets/akkurat3.png' },
       { type: 'image', url: 'assets/akkurat4.png' },
       { type: 'image', url: 'assets/akkurat5.png' },
