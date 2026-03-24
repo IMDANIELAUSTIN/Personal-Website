@@ -4,7 +4,7 @@ const projects = [
     slug: "ntwindow",
     image: "assets/projecttile-2.jpg",
     name: "NT Window Inc Brand Anniversary Refresh",
-    type: "Visual Design",
+    type: "Brand Design, Visual Design",
     year: 2025,
     blocks: [
       { type: 'text', content: "NT Window Inc. is a leading manufacturer of windows and doors, serving both residential and commercial markets. In 2025, I was commissioned to refresh the NT Window brand guidelines to prepare for the company's 35th anniversary while extending the celebration to automotive and employee apparel." },
