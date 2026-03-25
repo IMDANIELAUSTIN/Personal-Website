@@ -3,7 +3,7 @@ const projects = [
   {
     slug: "ntwindow",
     image: "assets/projecttile-2.jpg",
-    name: "NT Window Inc Brand Anniversary Refresh",
+    name: "NT Window Inc — Anniversary Refresh",
     type: "Brand Design, Visual Design",
     year: 2025,
     blocks: [
@@ -51,7 +51,7 @@ const projects = [
   {
     slug: "artbound",
     image: "assets/projecttile-4.jpg",
-    name: "Artbound — Logo Redesign & Cultural Identity System",
+    name: "PBS Artbound — Logo Redesign & Identity System",
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
@@ -65,7 +65,7 @@ const projects = [
   {
     slug: "solefolks",
     image: "assets/projecttile-5.jpg",
-    name: "ArtCenter x Sole Folks Community Studio",
+    name: "ArtCenter x Sole Folks — Design Studio for Community",
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
