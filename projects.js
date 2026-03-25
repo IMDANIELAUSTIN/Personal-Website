@@ -16,7 +16,7 @@ const projects = [
       { type: 'image', url: 'assets/ntwindow5.png' },
       { type: 'image', url: 'assets/ntwindow6.png' },
       { type: 'image', url: 'assets/ntwindow7.png' },
-      { type: 'text', content: 'The developments has since become a cornerstone of NT Window visually, appearing across various touchpoints from social media and wayfinding to faculty event apparel.' }
+      { type: 'text', content: 'The developments has since become a cornerstone of NT Window visually, appearing across various touchpoints from social media and wayfinding to faculty event apparel.' },
       { type: 'image', url: 'assets/ntwindow8.png', bgColor: '#6D2D3F', },
       { type: 'image', url: 'assets/ntwindow9.png', bgColor: '#6D2D3F', },
 
