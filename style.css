@@ -23,7 +23,7 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--fg);
-  line-height: 1.5;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -285,7 +285,7 @@ nav.mobile a {
 /* ── Footer ── */
 .site-footer {
   background: var(--bg);
-  border-top: 2px solid var(--border);
+  border-top: 2px solid #000000;
   padding: 2.5rem 1.5rem 2rem;
 }
 
@@ -310,7 +310,7 @@ nav.mobile a {
   gap: 1rem;
   padding: 1.05rem 0;
   cursor: pointer;
-  color: var(--fg);
+  color: #000000;
   font-size: 0.98rem;
 }
 
@@ -385,22 +385,22 @@ nav.mobile a {
   color: #000000;
   font-size: 0.875rem;
   text-align: center;
-    align-items: center;
+  align-items: center;
 }
 
 .footer-legal-links {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 0.65rem;
-    text-align: center;
+  text-align: center;
    
 }
 
 .footer-legal-links a {
   color: #000000;
-    text-align: center;
-    align-items: center ;
+  text-align: center;
+  align-items: center ;
 }
 
 .footer-divider {
@@ -458,7 +458,6 @@ nav.mobile a {
   }
 
   .footer-legal {
-    grid-template-columns: auto 1fr;
     align-items: center;
     gap: 1rem;
   }
