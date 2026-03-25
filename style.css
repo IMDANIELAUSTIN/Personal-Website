@@ -260,7 +260,7 @@ nav.mobile a {
 }
 
 .project-card .info span {
-  color: var(--muted);
+  color: #000000;
 }
 
 .load-more {
@@ -342,7 +342,7 @@ nav.mobile a {
 .footer-item {
   font-size: 0.875rem;
   line-height: 1.2;
-  color: var(--muted);
+  color: #000000;
   transition: color 0.2s ease;
 }
 
@@ -354,7 +354,7 @@ nav.mobile a {
 .footer-section-body a:hover,
 .footer-note a:hover,
 .footer-legal-links a:hover {
-  color: var(--fg);
+  color: #000000;
 }
 
 .footer-meta {
