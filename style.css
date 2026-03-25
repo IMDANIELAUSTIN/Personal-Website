@@ -87,7 +87,7 @@ nav.desktop {
 }
 
 nav a {
-  font-size: 0.67rem;
+  font-size: 0.875rem;
   color: #000000;
   transition: color 0.2s;
 }
@@ -183,14 +183,14 @@ nav.mobile a {
 
 .filter-btns {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .filter-btn {
   font-size: 0.875rem;
   background: none;
   border: none;
-  color: var(--muted);
+  color: #000000;
   transition: color 0.2s;
   padding: 0;
 }
@@ -525,8 +525,8 @@ nav.mobile a {
 
 .about-text p {
   font-size: 0.875rem;
-  line-height: 1.8;
-  color: var(--muted);
+  line-height: 1.2;
+  color: #000000;
 }
 
 .leadership {
