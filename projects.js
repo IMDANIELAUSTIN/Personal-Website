@@ -84,7 +84,7 @@ const projects = [
   {
     slug: "akkurat",
     image: "assets/projecttile-6.jpg",
-    name: "Type Specimen Booklet",
+    name: "Akkurat — Type Specimen Booklet",
     type: "Typography, Print Design",
     year: 2020,
     blocks: [
