@@ -368,6 +368,7 @@ nav.mobile a {
   color: #000000;
   font-size: 0.875rem;
   line-height: 1.2;
+    text-align: center;
 }
 
 .footer-note a {
@@ -378,11 +379,13 @@ nav.mobile a {
 }
 
 .footer-legal {
+   max-width: 100%;
   display: grid;
   gap: 0.875rem;
   color: #000000;
   font-size: 0.875rem;
   text-align: center;
+    align-items: center;
 }
 
 .footer-legal-links {
@@ -391,11 +394,13 @@ nav.mobile a {
   align-items: center;
   gap: 0.35rem 0.65rem;
     text-align: center;
+   
 }
 
 .footer-legal-links a {
   color: #000000;
     text-align: center;
+    align-items: center ;
 }
 
 .footer-divider {
@@ -419,15 +424,15 @@ nav.mobile a {
   }
 
   .footer-section summary {
-    padding: 0 0 0.95rem;
+    padding: 1rem;
     cursor: default;
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: -0.01em;
   }
 
   .footer-chevron {
-    display: none;
+    display: flex;
   }
 
   .footer-section .footer-section-body {
@@ -437,19 +442,19 @@ nav.mobile a {
   }
 
   .footer-item {
-    font-size: 0.78rem;
+    font-size: 0.875rem;
   }
 
   .footer-meta {
     margin-top: 2.75rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--border);
-    gap: 0.875rem;
+\    gap: 0.875rem;
   }
 
   .footer-note,
   .footer-legal {
     font-size: 0.875rem;
+      align-content: center ;
   }
 
   .footer-legal {
