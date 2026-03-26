@@ -147,7 +147,7 @@ function renderFooter() {
 // ── Project Grid ─────────────────────────────────────────
 let sortMode = 'popular';
 let showAll = false;
-const INITIAL_COUNT = 6;
+const INITIAL_COUNT = 3;
 
 function getSorted() {
   let list = [...projects];
@@ -251,6 +251,7 @@ function pageAbout() {
     ${renderHeader()}
     <section class="page-hero">
       <p>To deliver design at the highest level, I keep my practice independent and research focused while working from my Los Angeles studio for clients around the world. Every project receives my full creative vision and strategic thinking, ensuring a personal and intentional approach from start to finish.</p>
+      <a href="https://la-tech.org/daniel-austin" class="cta" download="Daniel Austin Feature on LA-Tech.org">Read Feature  →</a>
     </section>
     <div class="studio-photos">
       <img src="assets/studio-1.jpg" alt="Group Photo at Snap Inc HQ in Santa Monica, CA" />
