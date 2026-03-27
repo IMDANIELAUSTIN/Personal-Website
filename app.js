@@ -158,6 +158,16 @@ function getSorted() {
   if (sortMode === 'visual') list = list.filter(p => p.type.toLowerCase().includes('visual'));
   return list;
 }
+function pageProject(slug) {
+  const project = projects.find((p) => p.slug === slug);
+  if (!project) return page404();
+
+  if (project.protected) {
+    return renderProtectedProjectGate(project);
+  }
+
+  return renderFullProject(project);
+}
 
 function renderProjectGrid() {
   const sorted = getSorted();
@@ -314,6 +324,35 @@ function pageContact() {
       </div>
     </div>
   `;
+}
+async function submitProjectPassword(event, slug) {
+  event.preventDefault();
+
+  const password = event.target.password.value;
+
+  const accessRes = await fetch("/api/project-access", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ slug, password })
+  });
+
+  if (!accessRes.ok) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  const projectRes = await fetch(`/api/projects/${slug}`, {
+    credentials: "include"
+  });
+
+  if (!projectRes.ok) {
+    alert("Could not load project.");
+    return;
+  }
+
+  const privateProject = await projectRes.json();
+  // render privateProject.blocks here
 }
 
 function pageProject(slug) {
