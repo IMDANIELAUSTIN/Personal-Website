@@ -73,12 +73,12 @@ const projects = [
       { type: 'image', url: 'assets/solefolks1.png', caption: 'Photo by Jason Armond, featured on Los Angeles Times' },
       { type: 'text', content: "Sole Folks identity system was mostly developed before our studio became involved. Our work was to further refine the brand while I was in charge of creating a brand pattern, developement of Brand Guidelines, and layout designs for presentations. The pattern draws on symbolic elements that resonate across cultures and I took that fooundation to juxtapose it with the concept of shoe sole designs and chain-link fences/broken chains. The result is a system that is approachable and adaptable while serving the organization's diverse communication needs across events, publications, and digital platforms. The pattern can currently be seen on the Front Facade of Sole Folks at Leimert Park." },
       { type: 'image', url: 'assets/solefolksbento.png', bgColor: '#000000', },
-      { type: 'image', url: 'assets/solefolks2.png', caption: 'Left: Location before Sole Folks Installation;Center: Location before Studio Development;Right: Location after Studio Development;,' },
+      { type: 'image', url: 'assets/solefolks2.png', caption: 'Left: Location before Sole Folks Installation | Center: Location before Studio Development | Right: Location after Studio Development' },
       { type: 'quote', text: '"This location at Leimert Park has seen immmense evolution over the decades and the installation of Sole Foks is the perfect next chapter of this legacy."', author: 'Daniel Austin, Graphic Design', bgColor: '#dc0000', color: '#ffffff' },
       { type: 'image', url: 'assets/solefolks3.png' },
       { type: 'image', url: 'assets/solefolks4.png' },
       { type: 'quote', text: '"I enjoyed working on a project with so much purpose. It really brings home why I am so passionate about design."', author: 'Brandon Comer, Industrial Design', bgColor: '#dc0000', color: '#ffffff' },
-      { type: 'image', url: 'assets/solefolks5.png', caption: 'Top: Studio Brainstorms with Founder on Location;Bottom: Studio Virtual Meeting during 2021 Quarantine;,' },
+      { type: 'image', url: 'assets/solefolks5.png', caption: 'Top: Studio Brainstorms with Founder on Location | Bottom: Studio Virtual Meeting during 2021 Quarantine' },
       { type: 'image', url: 'assets/solefolks6.png' },
       { type: 'button', text: 'As featured on Artcenter.edu', url: 'https://www.artcenter.edu/academics/undergraduate-degrees/product-design/course-of-study/featured-courses/community-studio.html', bgColor: '#dc0000', color: '#ffffff' }
     ]
