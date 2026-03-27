@@ -7,22 +7,7 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2025,
     protected: true,
-    teaser: "Case study available with password.",
-    blocks: [
-      { type: 'text', content: "NT Window Inc. is a leading manufacturer of windows and doors, serving both residential and commercial markets. In 2025, I was commissioned to refresh the NT Window brand guidelines to prepare for the company's 35th anniversary while extending the celebration to automotive and employee apparel." },
-      { type: 'image', url: 'assets/ntwindow1.png' },
-      { type: 'text', content: 'As NT Window celebrated their 35th anniversary they also needed their brand identity to communicate reliability while extending the brand to other mediums. With direction from the in-house Marketing Team, I was able to develop an Anniversary Decal to be used on the automotive fleet and then further take these refinements to develope an updated brand guidelines and packaging design.' },
-      { type: 'image', url: 'assets/ntwindow2.png' },
-      { type: 'image', url: 'assets/ntwindow3.png' },
-      { type: 'image', url: 'assets/ntwindow4.png' },
-      { type: 'image', url: 'assets/ntwindow5.png' },
-      { type: 'image', url: 'assets/ntwindow6.png' },
-      { type: 'image', url: 'assets/ntwindow7.png' },
-      { type: 'text', content: 'The developments has since become a cornerstone of NT Window visually, appearing across various touchpoints from social media and wayfinding to faculty event apparel.' },
-      { type: 'image', url: 'assets/ntwindow8.png', bgColor: '#6D2D3F', },
-      { type: 'image', url: 'assets/ntwindow9.png', bgColor: '#6D2D3F', },
-
-    ]
+    teaser: "Case study available with password. Full project details are served separately after verification."
   },
   {
     slug: "snapchat",
