@@ -6,7 +6,7 @@ const projects = [
     name: "NT Window Inc — Anniversary Refresh",
     type: "Brand Design, Visual Design",
     year: 2025,
-    protected: true,
+    protected: false,
     teaser: "Case study available with password. Full project details are served separately after verification."
   },
   {
