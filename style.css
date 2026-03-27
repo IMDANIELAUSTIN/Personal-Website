@@ -715,6 +715,7 @@ nav.mobile a {
   max-width: 48rem;
   width: 100%;
   text-align: center;
+  padding: .875rem;
 }
 
 .image-caption p {
