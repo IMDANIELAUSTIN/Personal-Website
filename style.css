@@ -297,18 +297,18 @@ nav.mobile a {
 }
 
 .load-more {
-  padding: 16px;
+  padding: 0.875rem;
   text-align: center;
   background: var(--bg);
 
 }
 
 .load-more button {
-  font-size: 16pt;
+  font-size: 0.875rem;
   background: none;
   border: none;
   color: var(--fg);
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 .load-more button:hover {
