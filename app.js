@@ -446,7 +446,6 @@ function pageAbout() {
     ${renderHeader()}
     <section class="page-hero">
       <p>To deliver design at the highest level, I keep my practice independent and research focused while working from my Los Angeles studio for clients around the world. Every project receives my full creative vision and strategic thinking, ensuring a personal and intentional approach from start to finish.</p>
-      <a href="https://la-tech.org/daniel-austin" class="cta" download="Daniel Austin Feature on LA-Tech.org">Read Feature  →</a>
     </section>
     <div class="studio-photos">
       <img src="assets/studio-1.jpg" alt="Group Photo at Snap Inc HQ in Santa Monica, CA" />
@@ -455,8 +454,7 @@ function pageAbout() {
 
     </div>
     <div class="about-text">
-      <p>Since 2016, I have built an independent design practice rooted in ideas and craft while specializing in brand identities and print design for clients across the United States and around the world.</p>
-      <p>My approach is collaborative and deeply personal. I am involved in every project from the first conversation to the final detail, bringing the same level of care and intention to work of every scale.</p>
+      <a href="https://la-tech.org/daniel-austin" class="cta" download="Daniel Austin Feature on LA-Tech.org">Read Feature  →</a>
     </div>
     <div class="leadership">
       <h2>Designer</h2>
