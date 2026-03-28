@@ -91,8 +91,8 @@ const projects = [
     type: "Typography, Print Design",
     year: 2020,
     blocks: [
-      { type: 'image', url: 'assets/akkurat1.png' },
       { type: 'text', content: "Using Akkurat to develop a typographic system juxtaposed with the works of Alfred Hitchcock, this booklet explores Akkurat's role as a contemporary neo-grotesque within an editorial design. The booklet showcases how neutrality can be leveraged as a design tool without sacrificing visual identity." },
+      { type: 'image', url: 'assets/akkurat1.png' },
       { type: 'image', url: 'assets/akkurat2.png' },
       { type: 'image', url: 'assets/akkurat3.png' },
       { type: 'image', url: 'assets/akkurat4.png' },
