@@ -147,7 +147,7 @@ function renderFooter() {
 // ── Project Grid ─────────────────────────────────────────
 let sortMode = 'popular';
 let showAll = false;
-const INITIAL_COUNT = 3;
+const INITIAL_COUNT = 9;
 
 // Protected project content lives behind the API and is only cached in memory after unlock.
 const protectedProjectCache = new Map();
