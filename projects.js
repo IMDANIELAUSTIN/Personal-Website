@@ -1,14 +1,13 @@
 const projects = [
   {
-    slug: "perosnalbranding",
+    slug: "personalbranding",
     image: "assets/projecttile-1.jpg",
     name: "DANIEL LEE AUSTIN d.b.a. ASTNDSGN — Identity Development",
     type: "Brand Design, Visual Design",
     year: 2021,
     protected: true,
-    teaser: "Case study available with password."
+    teaser: "Case study available with password. Full project details are served separately after verification.",
     blocks: [
-
     ]
   },
   {
