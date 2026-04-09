@@ -78,12 +78,13 @@ function renderFooter() {
     {
       title: 'Social Media',
       items: [
+        { label: 'Substack', href: 'https://imdanielaustin.substack.com', external: true },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN', external: true },
         { label: 'Twitter', href: 'https://www.X.com/bydanielaustin', external: true },
         { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN', external: true },
         { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN', external: true },
         { label: 'Store', href: 'https://imdanielaustin.gumroad.com', external: true },
-        { label: 'Personal Blog', href: 'https://www.imdanielaustin.com', external: true },
+        { label: 'Patreon', href: 'https://www.imdanielaustin.com', external: true },
       ],
     },
   ];
