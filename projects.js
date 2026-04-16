@@ -68,6 +68,7 @@ const projects = [
     blocks: [
       { type: 'text', content: "A strategic rebrand for Artbound, an Emmy® award-winning arts and culture series documenting creative innovation across Southern California. This project repositions the identity to better reflect its role as both a cultural archive and contemporary media platform, balancing editorial credibility with visual impact." },
       { type: 'image', url: 'assets/artbound1.png' },
+      { type: 'image', url: 'assets/artboundbento.png' },
       { type: 'image', url: 'assets/artboundrefresh.png' },
       { type: 'image', url: 'assets/artbound2.png', bgColor: '#ECF6FB', },
       { type: 'image', url: 'assets/artbound3.png', bgColor: '#ECF6FB', },
