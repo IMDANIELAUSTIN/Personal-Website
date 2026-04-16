@@ -70,7 +70,6 @@ const projects = [
       { type: 'image', url: 'assets/artbound1.png' },
       { type: 'image', url: 'assets/artboundbento.png' },
       { type: 'image', url: 'assets/artboundrefresh.png' },
-      { type: 'image', url: 'assets/artbound2.png', bgColor: '#ECF6FB', },
       { type: 'image', url: 'assets/artbound3.png', bgColor: '#ECF6FB', },
     ]
   },
