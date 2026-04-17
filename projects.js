@@ -110,7 +110,7 @@ const projects = [
     ]
   },
   {
-    slug: "personalbranding",
+    slug: "astndsgn",
     image: "assets/projecttile-1.jpg",
     name: "DANIEL LEE AUSTIN d.b.a. ASTNDSGN — Identity Development",
     type: "Brand Design, Visual Design",
