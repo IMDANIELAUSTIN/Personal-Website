@@ -421,6 +421,7 @@ function pageIndex() {
     <section class="hero">
       <h1>Independent graphic designer crafting brand identities and visual systems for enterprises worldwide.</h1>
       <a href="./Daniel Austin MASTER RÉSUMÉ.pdf" class="cta" download="Daniel Austin Graphic Design Resume">Download My Resume →</a>
+      <br>
       <a href="https://shop.beacons.ai/imdanielaustin/86dd0e96-ec70-486c-9f87-615d09f93e7b" class="cta" download="Schedule Link">Book Your Free Consultation Today →</a>
     </section>
     <div id="project-grid-wrapper">${renderProjectGrid()}</div>
