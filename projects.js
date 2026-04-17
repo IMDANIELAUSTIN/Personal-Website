@@ -66,7 +66,7 @@ const projects = [
     type: "Brand Design, Visual Design",
     year: 2021,
     blocks: [
-      { type: 'text', content: "A strategic rebrand for Artbound, an Emmy® award-winning arts and culture series documenting creative innovation across Southern California. This project repositions the identity to better reflect its role as both a cultural archive and contemporary media platform, balancing editorial credibility with visual impact." },
+      { type: 'text', content: "For the Emmy® award-winning arts and culture series, Artbound, I focused on crafting aN identity system that defines Artbound’s target audience while inheriting the cohesion of PBS’s existing identity. Further I elaborate on a sample episode detailing the music genre, Gospel, and it’s impact on Black Americans in the Southern California region. Artbound examines the life, works, and impact of artists in Southern California. The identity system for this rebrand includes a new logo and typemark, an informational booklet, three triptych-style posters, a business stationary system, and a social media carousel." },
       { type: 'image', url: 'assets/artbound1.png' },
       { type: 'image', url: 'assets/artboundbento.png' },
       { type: 'image', url: 'assets/artboundrefresh.png' },
