@@ -36,7 +36,7 @@ const projects = [
   {
     slug: "snapchat",
     image: "assets/projecttile-3.jpg",
-    name: "AR SnapLens — Snapchat Design Academy",
+    name: "Snapchat Design Academy — AR SnapLens Concept",
     type: "Interface Design, Visual Design",
     year: 2021,
     blocks: [
