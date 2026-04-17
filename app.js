@@ -146,7 +146,7 @@ function renderFooter() {
 }
 
 // ── Project Grid ─────────────────────────────────────────
-let sortMode = 'az';
+let sortMode = 'newest';
 let showAll = false;
 const INITIAL_COUNT = 9;
 
