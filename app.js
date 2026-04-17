@@ -249,7 +249,7 @@ function renderProjectLayout(project, contentHtml, extraClass = '') {
     ${renderHeader()}
     <div class="project-detail${extraClass ? ` ${extraClass}` : ''}">
       <div class="breadcrumb">
-        <a href="#/work">Projects</a> &gt;
+        <a href="#/work">All Projects</a> &gt;
       </div>
       <div class="project-title">
         <h1>${project.name}</h1>
@@ -317,7 +317,7 @@ function renderProtectedProjectGate(project, gateState = getProtectedProjectStat
     ${renderHeader()}
     <div class="project-detail project-detail-locked">
       <div class="breadcrumb">
-        <a href="#/work">Projects</a> &gt;
+        <a href="#/work">All Projects</a> &gt;
       </div>
       <div class="project-title">
         <p class="project-eyebrow">Protected Case Study</p>
