@@ -33,6 +33,17 @@ const projects = [
 
     ]
   },
+    {
+    slug: "thebitcoinlayer",
+    image: "assets/projecttile-tbl.jpg",
+    name: "The Bitcoin Layer — Identity Refinement",
+    type: "Brand Design, Visual Design",
+    year: 2023,
+    protected: true,
+    teaser: "Project available with password. Full project details are served separately after verification.",
+    blocks: [
+    ]
+  },
   {
     slug: "snapchat",
     image: "assets/projecttile-3.jpg",
