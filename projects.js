@@ -35,7 +35,7 @@ const projects = [
   },
     {
     slug: "thebitcoinlayer",
-    image: "assets/TBL Full Logomark Hero Animation.gif",
+    image: "assets/TBL Typemark Redline Animation.gif",
     name: "The Bitcoin Layer — Identity Refinement",
     type: "Brand Design, Visual Design",
     year: 2023,
