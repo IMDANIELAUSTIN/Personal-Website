@@ -413,13 +413,13 @@ function updateMeta(title, description) {
 
 // ── Pages ────────────────────────────────────────────────
 function pageIndex() {
-  updateMeta('Home', 'Daniel Austin is a Multi-Disciplinary Brand Designer and Product Conceptual Artist.');
+  updateMeta('Home', 'Daniel Lee Austin is a Multi-Disciplinary Freelance Graphic Designer Specializing in Branding for Corporations and Enterprises.');
   sortMode = 'popular';
   showAll = false;
   return `
     ${renderHeader()}
     <section class="hero">
-      <h1>Independent graphic designer crafting brand identities and visual systems for enterprises worldwide.</h1>
+      <h1>Freelance Graphic Designer Crafting Brand Identities and Visual Systems for Enterprises Worldwide.</h1>
       <a href="./Daniel Austin MASTER RÉSUMÉ.pdf" class="cta" download="Daniel Austin Graphic Design Resume">Download My Resume →</a>
       <br>
       <a href="https://shop.beacons.ai/imdanielaustin/86dd0e96-ec70-486c-9f87-615d09f93e7b" class="cta" download="Schedule Link">Book Your Free Consultation Today →</a>
@@ -444,7 +444,7 @@ function pageWork() {
 }
 
 function pageAbout() {
-  updateMeta('About', 'Learn about Daniel Lee Austin, Independent Designer based in Los Angeles.');
+  updateMeta('About', 'Learn about Daniel Lee Austin, Freelance Graphic Designer based in Los Angeles, California.');
   return `
     ${renderHeader()}
     <section class="page-hero">
@@ -493,8 +493,8 @@ function pageContact() {
         </div>
         <div class="contact-block">
           <span class="bold">Daniel Lee Austin</span>
-          <span>Independent Designer</span>
-          <span>Los Angeles, CA</span>
+          <span>Freelance Graphic Designer</span>
+          <span>Los Angeles, California</span>
         </div>
         <div class="contact-block">
           <a href="https://www.linkedin.com/in/IMDANIELAUSTIN">LinkedIn</a>
