@@ -17,6 +17,7 @@ function renderHeader() {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/work' },
+    { label: 'FYI', href: 'https://calc.imdanielaustin.com', external: true },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ];
@@ -28,7 +29,7 @@ function renderHeader() {
       </a>
       <nav class="desktop">
         ${navItems.map(item => `
-          <a href="#${item.path}" class="${path === item.path ? 'active' : ''}">${item.label}</a>
+          <a href="${item.href || `#${item.path}`}" class="${item.path && path === item.path ? 'active' : ''}"${item.external ? ' target="_blank" rel="noreferrer"' : ''}>${item.label}</a>
         `).join('')}
       </nav>
       <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" id="hamburger-btn">
@@ -38,7 +39,7 @@ function renderHeader() {
     </header>
     <nav class="mobile" id="mobile-nav">
       ${navItems.map(item => `
-        <a href="#${item.path}" class="${path === item.path ? 'active' : ''}" onclick="closeMenu()">${item.label}</a>
+        <a href="${item.href || `#${item.path}`}" class="${item.path && path === item.path ? 'active' : ''}"${item.external ? ' target="_blank" rel="noreferrer"' : ''} onclick="closeMenu()">${item.label}</a>
       `).join('')}
     </nav>
   `;
