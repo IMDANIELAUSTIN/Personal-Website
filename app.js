@@ -17,7 +17,7 @@ function renderHeader() {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/work' },
-    { label: 'FYI', href: 'https://calc.imdanielaustin.com', external: true },
+    { label: 'Playground', path: '/play' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ];
