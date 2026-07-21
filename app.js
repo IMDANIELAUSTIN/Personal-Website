@@ -444,6 +444,20 @@ function pageWork() {
   `;
 }
 
+function pagePlay() {
+  updateMeta('Play', 'Learn about Daniel Lee Austin, Freelance Graphic Designer based in Los Angeles, California.');
+  sortMode = 'popular';
+  showAll = false;
+  return `
+    ${renderHeader()}
+    <section class="page-hero">
+      <h1>My Personal Projects</h1>
+    </section>
+    <div id="project-grid-wrapper">${renderProjectGrid()}</div>
+    ${renderFooter()}
+  `;
+}
+
 function pageAbout() {
   updateMeta('About', 'Learn about Daniel Lee Austin, Freelance Graphic Designer based in Los Angeles, California.');
   return `
