@@ -77,12 +77,12 @@ function renderFooter() {
     },
   ];
   const socialLinks = [
+    { label: 'Store', href: 'https://imdanielaustin.gumroad.com' },
     { label: 'Substack', href: 'https://imdanielaustin.substack.com' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN' },
     { label: 'Twitter', href: 'https://www.X.com/bydanielaustin' },
     { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN' },
     { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN' },
-    { label: 'Store', href: 'https://imdanielaustin.gumroad.com' },
     { label: 'Patreon', href: 'https://www.imdanielaustin.com' },
   ];
 
@@ -459,7 +459,7 @@ function pageApps() {
   return `
     ${renderHeader()}
     <section class="page-hero">
-      <h1>Apps</h1>
+      <h1>My Apps</h1>
     </section>
     <div id="project-grid-wrapper">${renderProjectGrid(true)}</div>
     ${renderFooter()}
