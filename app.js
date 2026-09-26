@@ -25,7 +25,7 @@ function renderHeader() {
   return `
     <header>
       <a href="#/" class="logo">
-        <img src="assets/logo.svg" alt="Daniel Lee Austin" />
+        <img src="assets/daniel-austin-combinationmark.svg" alt="Daniel Lee Austin" />
       </a>
       <nav class="desktop">
         ${navItems.map(item => `
