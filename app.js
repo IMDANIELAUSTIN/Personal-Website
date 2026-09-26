@@ -169,7 +169,12 @@ function getSorted() {
   if (sortMode === 'brand') list = list.filter((p) => p.type.toLowerCase().includes('brand'));
   if (sortMode === 'print') list = list.filter((p) => p.type.toLowerCase().includes('print'));
   if (sortMode === 'visual') list = list.filter((p) => p.type.toLowerCase().includes('visual'));
-  if (sortMode === 'product') list = list.filter((p) => p.type.toLowerCase().includes('product'));
+  if (sortMode === 'product') {
+    list = list.filter((p) =>
+      p.type.toLowerCase().includes('product') ||
+      p.tags?.some((tag) => tag.toLowerCase() === 'product design')
+    );
+  }
   return list;
 }
 
@@ -455,7 +460,7 @@ function pageWork() {
 
 function pageApps() {
   updateMeta('Apps', 'Explore apps and personal projects by Daniel Lee Austin.');
-  sortMode = 'popular';
+  sortMode = 'product';
   showAll = false;
   return `
     ${renderHeader()}

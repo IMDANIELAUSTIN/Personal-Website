@@ -41,6 +41,7 @@ const projects = [
     image: "assets/projecttile-3.jpg",
     name: "Snapchat Design Academy — AR SnapLens Concept",
     type: "Interface Design, Visual Design",
+    tags: ["Product Design"],
     year: 2021,
     blocks: [
       { type: 'text', content: "Selected as a Snap Design Academy Scholar, I joined a cohort of emerging designers for an immersive, industry-level program hosted by Snap Inc and LA-Tech. Working cross-functionally with designers, engineers, and storytellers, I helped concept and develop the UI/UX for a new Snap feature designed to elevate underrepresented Los Angeles Neighborhoods, gaining hands-on experience in design research, direct mentorship, and critical guidance from Snap's creative team." },
