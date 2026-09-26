@@ -183,7 +183,9 @@ nav.mobile a {
 
 .filter-btns {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 2rem;
 }
 
 .filter-btn {
@@ -422,12 +424,12 @@ nav.mobile a {
 }
 
 .footer-legal-links {
-  display: inline;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem 0.65rem;
   text-align: center;
-   
 }
 
 .footer-legal-links a {

@@ -95,6 +95,7 @@ function renderFooter() {
     { label: 'Terms of Service', href: 'terms-of-service.html' },
     { label: 'Sitemap', href: '#/sitemap.xml' },
   ];
+  const socialLinks = sections.find((section) => section.title === 'Social Media').items;
 
   const renderItem = (item) => {
     const classes = `footer-item${item.emphasis ? ' footer-item-strong' : ''}`;
@@ -139,6 +140,12 @@ function renderFooter() {
                 <a href="${item.href}">${item.label}</a>
               `).join('')}
             </div>
+            <div class="footer-legal-links footer-social-links" aria-label="Social Media links">
+              ${socialLinks.map((item, index) => `
+                ${index ? '<span class="footer-divider" aria-hidden="true">|</span>' : ''}
+                <a href="${item.href}" target="_blank" rel="noreferrer">${item.label}</a>
+              `).join('')}
+            </div>
           </div>
         </div>
       </div>
@@ -162,6 +169,7 @@ function getSorted() {
   if (sortMode === 'brand') list = list.filter((p) => p.type.toLowerCase().includes('brand'));
   if (sortMode === 'print') list = list.filter((p) => p.type.toLowerCase().includes('print'));
   if (sortMode === 'visual') list = list.filter((p) => p.type.toLowerCase().includes('visual'));
+  if (sortMode === 'product') list = list.filter((p) => p.type.toLowerCase().includes('product'));
   return list;
 }
 
@@ -367,6 +375,7 @@ function renderProjectGrid() {
         <button class="filter-btn ${sortMode === 'brand' ? 'active' : ''}" onclick="setSort('brand')">Brand Design</button>
         <button class="filter-btn ${sortMode === 'print' ? 'active' : ''}" onclick="setSort('print')">Print Design</button>
         <button class="filter-btn ${sortMode === 'visual' ? 'active' : ''}" onclick="setSort('visual')">Visual Design</button>
+        <button class="filter-btn ${sortMode === 'product' ? 'active' : ''}" onclick="setSort('product')">Product Design</button>
       </div>
     </div>
     <div class="grid-section">
