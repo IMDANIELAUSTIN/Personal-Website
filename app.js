@@ -87,9 +87,9 @@ function renderFooter() {
   ];
 
   const legalLinks = [
-    { label: 'Privacy Policy', href: 'privacy-policy.html' },
-    { label: 'Terms of Service', href: 'terms-of-service.html' },
-    { label: 'Sitemap', href: '#/sitemap.xml' },
+    { label: 'Privacy Policy', href: '#/privacy-policy' },
+    { label: 'Terms of Service', href: '#/terms-of-service' },
+    { label: 'Sitemap', href: '#/sitemap' },
   ];
   const renderItem = (item) => {
     const classes = `footer-item${item.emphasis ? ' footer-item-strong' : ''}`;
@@ -535,6 +535,127 @@ function pageContact() {
   `;
 }
 
+function renderDocumentPage(title, description, sections) {
+  updateMeta(title, description);
+  return `
+    ${renderHeader()}
+    <main class="document-page">
+      <section class="page-hero document-heading">
+        <p class="document-eyebrow">DANIEL LEE AUSTIN STUDIO</p>
+        <h1>${title}</h1>
+        <p>${description}</p>
+      </section>
+      <div class="document-content">
+        ${sections.map((section) => `
+          <section class="document-section">
+            <h2>${section.heading}</h2>
+            <p>${section.body}</p>
+          </section>
+        `).join('')}
+      </div>
+    </main>
+    ${renderFooter()}
+  `;
+}
+
+function pagePrivacyPolicy() {
+  return renderDocumentPage('Privacy Policy', 'Privacy and information practices for IMDANIELAUSTIN | ASTNDSGN.', [
+    {
+      heading: 'Our commitment',
+      body: 'At IMDANIELAUSTIN | ASTNDSGN, we are committed to protecting the privacy and personal information of our customers. We understand the importance of maintaining the confidentiality of your data and are dedicated to ensuring that all first-party customer data is private and protected.',
+    },
+    {
+      heading: 'Data use and security',
+      body: 'We do not sell or exchange any first-party customer data with third-party entities. All data collected by us is solely used to improve our services, tailor your experience, and communicate with you regarding updates and promotions. We take all necessary measures to safeguard the information we collect. Our security protocols include encryption, firewalls, and access controls to prevent unauthorized access, alteration, or disclosure of your data.',
+    },
+    {
+      heading: 'Applicable laws and questions',
+      body: 'We also comply with all applicable laws and regulations governing data privacy, including the EU\'s General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We value the trust our customers have placed in us and will continue to prioritize the security and privacy of your data. If you have questions or concerns, contact <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>.',
+    },
+  ]);
+}
+
+function pageTermsOfService() {
+  return renderDocumentPage('Terms of Service', 'Terms for engaging with IMDANIELAUSTIN | ASTNDSGN and using this website.', [
+    {
+      heading: 'Privacy',
+      body: 'All first-party customer data is private and protected. We do not sell or exchange customer data with third-party entities and take measures to help keep personal information safe and secure.',
+    },
+    {
+      heading: 'Bookings and contributions',
+      body: 'All deposits for bookings and consultations are final and non-refundable. All donations made to IMDANIELAUSTIN | ASTNDSGN are also final.',
+    },
+    {
+      heading: 'Copyright and permitted use',
+      body: 'Website text and products are protected under applicable United States trademark and copyright laws unless otherwise stated as third-party material or shared under a Creative Commons license. Reproduction, replication, resale, or redistribution requires direct written consent from IMDANIELAUSTIN | ASTNDSGN.',
+    },
+    {
+      heading: 'Questions',
+      body: 'If you have questions or concerns about these terms, contact <a href="mailto:daustin@inside.artcenter.edu">daustin@inside.artcenter.edu</a>.',
+    },
+  ]);
+}
+
+function pageSitemap() {
+  updateMeta('Sitemap', 'Browse the pages, portfolio projects, and resources on Daniel Lee Austin’s website.');
+  const pages = [
+    { label: 'Home', href: '#/', detail: 'Studio introduction and selected work' },
+    { label: 'Work', href: '#/work', detail: 'Full design portfolio' },
+    { label: 'Apps', href: '#/apps', detail: 'Apps and Product Design projects' },
+    { label: 'About', href: '#/about', detail: 'Studio background and experience' },
+    { label: 'Contact', href: '#/contact', detail: 'Work and press inquiries' },
+    { label: 'Sitemap', href: '#/sitemap', detail: 'Complete website directory' },
+    { label: 'Privacy Policy', href: '#/privacy-policy', detail: 'Information and privacy' },
+    { label: 'Terms of Service', href: '#/terms-of-service', detail: 'Website and studio terms' },
+  ];
+  const social = [
+    { label: 'Store', href: 'https://imdanielaustin.gumroad.com' },
+    { label: 'Substack', href: 'https://imdanielaustin.substack.com' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN' },
+    { label: 'Twitter', href: 'https://www.X.com/bydanielaustin' },
+    { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN' },
+    { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN' },
+    { label: 'Patreon', href: 'https://www.imdanielaustin.com' },
+  ];
+  const renderLinkList = (items) => items.map((item) => `
+    <li>
+      <a href="${item.href}"${item.href.startsWith('http') ? ' target="_blank" rel="noreferrer"' : ''}>${item.label}</a>
+      ${item.detail ? `<span>${item.detail}</span>` : ''}
+    </li>
+  `).join('');
+
+  return `
+    ${renderHeader()}
+    <main class="document-page sitemap-page">
+      <section class="page-hero document-heading">
+        <p class="document-eyebrow">FIND YOUR WAY</p>
+        <h1>Sitemap</h1>
+        <p>Explore the studio, portfolio, and useful links from one place.</p>
+      </section>
+      <div class="sitemap-content">
+        <section class="sitemap-group">
+          <h2>Pages</h2>
+          <ul class="sitemap-list">${renderLinkList(pages)}</ul>
+        </section>
+        <section class="sitemap-group">
+          <h2>Projects</h2>
+          <ul class="sitemap-list sitemap-projects">${renderLinkList(projects.map((project) => ({
+            label: project.name,
+            href: `#/project/${project.slug}`,
+            detail: `${project.type} · ${project.year}${project.protected ? ' · Password protected' : ''}`,
+          })))}</ul>
+          <p class="sitemap-note">Password-protected projects require authorization to view their case studies.</p>
+        </section>
+        <section class="sitemap-group">
+          <h2>Elsewhere</h2>
+          <ul class="sitemap-list sitemap-social">${renderLinkList(social)}</ul>
+        </section>
+      </div>
+    </main>
+    ${renderFooter()}
+  `;
+}
+
 async function submitProjectPassword(event, slug) {
   event.preventDefault();
 
@@ -666,6 +787,9 @@ function render() {
   else if (path === '/apps' || path === '/play') app.innerHTML = pageApps();
   else if (path === '/about') app.innerHTML = pageAbout();
   else if (path === '/contact') app.innerHTML = pageContact();
+  else if (path === '/privacy-policy') app.innerHTML = pagePrivacyPolicy();
+  else if (path === '/terms-of-service') app.innerHTML = pageTermsOfService();
+  else if (path === '/sitemap') app.innerHTML = pageSitemap();
   else if (path.startsWith('/project/')) {
     const slug = path.replace('/project/', '');
     app.innerHTML = pageProject(slug);

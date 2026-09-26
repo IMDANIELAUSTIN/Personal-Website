@@ -521,6 +521,139 @@ nav.mobile a {
   line-height: 1.2;
 }
 
+/* ── Legal and directory pages ── */
+.document-page {
+  padding-bottom: 2rem;
+}
+
+.document-heading {
+  max-width: 58rem;
+  padding-bottom: 2rem;
+}
+
+.document-heading .document-eyebrow {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.document-heading h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.055em;
+}
+
+.document-heading > p:last-child {
+  max-width: 42rem;
+  color: var(--muted);
+}
+
+.document-content,
+.sitemap-content {
+  width: min(100% - 3rem, 58rem);
+  margin: 0 auto;
+}
+
+.document-section {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.7fr) minmax(0, 1.3fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.document-section h2,
+.sitemap-group h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.document-section p {
+  color: #26201e;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.document-section a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.sitemap-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem 4rem;
+}
+
+.sitemap-group {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.sitemap-group h2 {
+  margin-bottom: 1rem;
+}
+
+.sitemap-list {
+  list-style: none;
+}
+
+.sitemap-list li {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.sitemap-list li:first-child {
+  border-top: 0;
+}
+
+.sitemap-list a {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.sitemap-list a:hover {
+  color: var(--muted);
+}
+
+.sitemap-list li span,
+.sitemap-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.sitemap-note {
+  padding-top: 0.75rem;
+}
+
+.sitemap-social {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .document-content,
+  .sitemap-content {
+    width: calc(100% - 3rem);
+  }
+
+  .document-section {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .sitemap-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* About */
 .studio-photos {
   padding: 0 1.5rem 3rem;
