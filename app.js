@@ -17,7 +17,7 @@ function renderHeader() {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/work' },
-    { label: 'Apps', path: '/play' },
+    { label: 'Apps', path: '/apps' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ];
@@ -453,14 +453,14 @@ function pageWork() {
   `;
 }
 
-function pagePlay() {
-  updateMeta('Play', 'Learn about Daniel Lee Austin, Freelance Graphic Designer based in Los Angeles, California.');
+function pageApps() {
+  updateMeta('Apps', 'Explore apps and personal projects by Daniel Lee Austin.');
   sortMode = 'popular';
   showAll = false;
   return `
     ${renderHeader()}
     <section class="page-hero">
-      <h1>My Personal Projects</h1>
+      <h1>Apps</h1>
     </section>
     <div id="project-grid-wrapper">${renderProjectGrid()}</div>
     ${renderFooter()}
@@ -664,6 +664,7 @@ function render() {
 
   if (path === '/') app.innerHTML = pageIndex();
   else if (path === '/work') app.innerHTML = pageWork();
+  else if (path === '/apps' || path === '/play') app.innerHTML = pageApps();
   else if (path === '/about') app.innerHTML = pageAbout();
   else if (path === '/contact') app.innerHTML = pageContact();
   else if (path.startsWith('/project/')) {
