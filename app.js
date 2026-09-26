@@ -75,19 +75,15 @@ function renderFooter() {
         { label: 'Contact', href: '#/contact' },
       ],
     },
-
-    {
-      title: 'Social Media',
-      items: [
-        { label: 'Substack', href: 'https://imdanielaustin.substack.com', external: true },
-        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN', external: true },
-        { label: 'Twitter', href: 'https://www.X.com/bydanielaustin', external: true },
-        { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN', external: true },
-        { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN', external: true },
-        { label: 'Store', href: 'https://imdanielaustin.gumroad.com', external: true },
-        { label: 'Patreon', href: 'https://www.imdanielaustin.com', external: true },
-      ],
-    },
+  ];
+  const socialLinks = [
+    { label: 'Substack', href: 'https://imdanielaustin.substack.com' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/IMDANIELAUSTIN' },
+    { label: 'Twitter', href: 'https://www.X.com/bydanielaustin' },
+    { label: 'Threads', href: 'https://www.threads.com/IMDANIELAUSTIN' },
+    { label: 'Instagram', href: 'https://www.instagram.com/ASTNDSGN' },
+    { label: 'Store', href: 'https://imdanielaustin.gumroad.com' },
+    { label: 'Patreon', href: 'https://www.imdanielaustin.com' },
   ];
 
   const legalLinks = [
@@ -95,8 +91,6 @@ function renderFooter() {
     { label: 'Terms of Service', href: 'terms-of-service.html' },
     { label: 'Sitemap', href: '#/sitemap.xml' },
   ];
-  const socialLinks = sections.find((section) => section.title === 'Social Media').items;
-
   const renderItem = (item) => {
     const classes = `footer-item${item.emphasis ? ' footer-item-strong' : ''}`;
     if (item.href) {
@@ -367,12 +361,12 @@ function renderProtectedProjectGate(project, gateState = getProtectedProjectStat
   `;
 }
 
-function renderProjectGrid() {
+function renderProjectGrid(hideFilters = false) {
   const sorted = getSorted();
   const visible = showAll ? sorted : sorted.slice(0, INITIAL_COUNT);
 
   return `
-    <div class="filters">
+    ${hideFilters ? '' : `<div class="filters">
       <span class="label"></span>
       <div class="filter-btns">
         <button class="filter-btn ${sortMode === 'popular' ? 'active' : ''}" onclick="setSort('popular')">All</button>
@@ -382,7 +376,7 @@ function renderProjectGrid() {
         <button class="filter-btn ${sortMode === 'visual' ? 'active' : ''}" onclick="setSort('visual')">Visual Design</button>
         <button class="filter-btn ${sortMode === 'product' ? 'active' : ''}" onclick="setSort('product')">Product Design</button>
       </div>
-    </div>
+    </div>`}
     <div class="grid-section">
       <div class="project-grid" id="project-grid">
         ${visible.map((project) => `
@@ -467,7 +461,7 @@ function pageApps() {
     <section class="page-hero">
       <h1>Apps</h1>
     </section>
-    <div id="project-grid-wrapper">${renderProjectGrid()}</div>
+    <div id="project-grid-wrapper">${renderProjectGrid(true)}</div>
     ${renderFooter()}
   `;
 }
