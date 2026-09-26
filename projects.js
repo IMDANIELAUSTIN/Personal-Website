@@ -2,7 +2,7 @@ const projects = [
   {
     slug: "ntwindow",
     image: "assets/projecttile-2.jpg",
-    name: "NT Window Inc — Anniversary Refresh",
+    name: "NT Window Inc — 35th Anniversary Refresh",
     type: "Brand Design, Visual Design",
     year: 2025,
     protected: false,

@@ -65,17 +65,6 @@ function closeMenu() {
 
 // ── Footer ──────────────────────────────────────────────
 function renderFooter() {
-  const sections = [
-    {
-      title: 'DANIEL LEE AUSTIN STUDIO',
-      items: [
-        { label: 'Home', href: '#/' },
-        { label: 'Work', href: '#/work' },
-        { label: 'About', href: '#/about' },
-        { label: 'Contact', href: '#/contact' },
-      ],
-    },
-  ];
   const socialLinks = [
     { label: 'Store', href: 'https://imdanielaustin.gumroad.com' },
     { label: 'Substack', href: 'https://imdanielaustin.substack.com' },
@@ -91,34 +80,9 @@ function renderFooter() {
     { label: 'Terms of Service', href: '#/terms-of-service' },
     { label: 'Sitemap', href: '#/sitemap' },
   ];
-  const renderItem = (item) => {
-    const classes = `footer-item${item.emphasis ? ' footer-item-strong' : ''}`;
-    if (item.href) {
-      const externalAttrs = item.external ? ' target="_blank" rel="noreferrer"' : '';
-      return `<a class="${classes}" href="${item.href}"${externalAttrs}>${item.label}</a>`;
-    }
-
-    return `<span class="${classes}">${item.label}</span>`;
-  };
-
   return `
     <footer class="site-footer">
       <div class="footer-shell">
-        <div class="footer-accordion">
-          ${sections.map(section => `
-            <details class="footer-section">
-              <summary>
-                <span>${section.title}</span>
-                <svg class="footer-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </summary>
-              <div class="footer-section-body">
-                ${section.items.map(renderItem).join('')}
-              </div>
-            </details>
-          `).join('')}
-        </div>
         <div class="footer-meta">
           <p class="footer-note">
             Available for brand identity, print design, and visual systems. Email
