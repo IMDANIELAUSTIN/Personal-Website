@@ -17,7 +17,7 @@ function renderHeader() {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/work' },
-    { label: 'Playground', path: '/play' },
+    { label: 'Apps', path: '/play' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ];
