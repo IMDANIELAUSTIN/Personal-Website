@@ -20,7 +20,6 @@ const projects = [
       { type: 'image', url: 'assets/ntwindow8.png', bgColor: '#6D2D3F', },
       { type: 'image', url: 'assets/ntwindow9.png', bgColor: '#6D2D3F', },
       { type: 'image', url: 'assets/ntwindowshirt1.png' },
-      { type: 'image', url: 'assets/ntwindowshirt2.png' },
 
 
     ]
